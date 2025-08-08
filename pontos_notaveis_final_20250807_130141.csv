@@ -1,0 +1,451 @@
+﻿Filial;Placa_Veiculo;Descricao_POI;Grupo_POI;Data_Entrada;Data_Saida;Status;Duracao
+RRP;RWF6G80;Abastecimento Frotas RRP;Parada Operacional;07/08/2025 13:01;;Entrou na cerca;0.0
+RRP;SYD5G23;Agua Clara;Parada Operacional;07/08/2025 08:53;;Entrou na cerca;0.0
+RRP;SYD5G50;Agua Clara;Parada Operacional;07/08/2025 11:13;;Entrou na cerca;0.0
+RRP;SYD5G58;Agua Clara;Parada Operacional;07/08/2025 08:04;;Entrou na cerca;0.0
+RRP;GBJ0J68;Fábrica;Fábrica;07/08/2025 06:22;07/08/2025 08:21;Saiu da cerca;1.99
+RRP;GBJ0J68;Carregamento;Carregamento;07/08/2025 06:22;07/08/2025 08:01;Saiu da cerca;1.66
+RRP;GBJ0J68;Enlonamento RRP;Parada Operacional;07/08/2025 08:03;07/08/2025 08:19;Saiu da cerca;0.27
+RRP;GBJ0J68;Buffer frotas ;Parada Operacional;07/08/2025 08:22;07/08/2025 08:53;Saiu da cerca;0.51
+RRP;GBJ0J68;Agua Clara;Parada Operacional;07/08/2025 10:08;07/08/2025 10:16;Saiu da cerca;0.13
+RRP;RWD4B32;Buffer frotas ;Parada Operacional;07/08/2025 11:34;;Entrou na cerca;0.0
+RRP;QTQ0F44;Carregamento;Carregamento;07/08/2025 07:56;07/08/2025 08:29;Saiu da cerca;0.54
+RRP;QTQ0F44;Fábrica;Fábrica;07/08/2025 07:56;07/08/2025 09:08;Saiu da cerca;1.19
+RRP;QTQ0F44;Enlonamento RRP;Parada Operacional;07/08/2025 08:46;07/08/2025 09:08;Saiu da cerca;0.36
+RRP;QTQ0F44;Buffer frotas ;Parada Operacional;07/08/2025 09:08;07/08/2025 09:38;Saiu da cerca;0.5
+RRP;QTQ0F44;Agua Clara;Parada Operacional;07/08/2025 10:53;07/08/2025 11:04;Saiu da cerca;0.18
+RRP;QUA0J34;Fábrica;Fábrica;07/08/2025 06:38;07/08/2025 08:26;Saiu da cerca;1.8
+RRP;QUA0J34;Carregamento;Carregamento;07/08/2025 06:38;07/08/2025 08:17;Saiu da cerca;1.66
+RRP;QUA0J34;Enlonamento RRP;Parada Operacional;07/08/2025 07:50;07/08/2025 08:24;Saiu da cerca;0.57
+RRP;QUA0J34;Buffer frotas ;Parada Operacional;07/08/2025 08:27;07/08/2025 09:18;Saiu da cerca;0.85
+RRP;QUA0J34;Agua Clara;Parada Operacional;07/08/2025 10:40;07/08/2025 10:55;Saiu da cerca;0.25
+RRP;RWB3C06;Descarga Inocencia;Não Mapeado;07/08/2025 05:46;07/08/2025 08:40;Saiu da cerca;2.9
+RRP;RWB3C06;Terminal;Terminal;07/08/2025 05:50;07/08/2025 08:38;Saiu da cerca;2.8
+RRP;RWB3C06;Descarga;Descarga;07/08/2025 05:50;07/08/2025 08:15;Saiu da cerca;2.42
+RRP;RWB3C06;Patio Carregado INO;Parada Operacional;07/08/2025 05:50;07/08/2025 06:09;Saiu da cerca;0.32
+RRP;RWB3C06;Descarga INO;Não Mapeado;07/08/2025 06:09;07/08/2025 08:11;Saiu da cerca;2.03
+RRP;RWB3C06;Patio Vazio INO;Parada Operacional;07/08/2025 06:09;07/08/2025 07:51;Saiu da cerca;1.69
+RRP;RWB3C06;Descarga INO;Não Mapeado;07/08/2025 08:13;07/08/2025 08:15;Saiu da cerca;0.03
+RRP;RWB3C06;Patio Carregado INO;Parada Operacional;07/08/2025 08:16;07/08/2025 08:38;Saiu da cerca;0.36
+RRP;RWB3C06;Agua Clara;Parada Operacional;07/08/2025 10:37;07/08/2025 10:47;Saiu da cerca;0.17
+RRP;RWB3C06;PA AGUA CLARA;Ponto Apoio;07/08/2025 10:45;07/08/2025 10:47;Saiu da cerca;0.03
+RRP;RWB3C06;Abastecimento Frotas RRP;Parada Operacional;07/08/2025 12:13;07/08/2025 12:27;Saiu da cerca;0.22
+RRP;RWB3C06;Pro LOG;Não Mapeado;07/08/2025 12:13;07/08/2025 12:27;Saiu da cerca;0.22
+RRP;SYD5G31;Buffer frotas ;Parada Operacional;07/08/2025 12:43;;Entrou na cerca;0.0
+RRP;SYD5G53;Buffer frotas ;Parada Operacional;07/08/2025 11:27;;Entrou na cerca;0.0
+RRP;RWD4B32;Agua Clara;Parada Operacional;07/08/2025 08:18;07/08/2025 09:12;Saiu da cerca;0.89
+RRP;RWD4B32;Abastecimento Frotas RRP;Parada Operacional;07/08/2025 10:23;07/08/2025 10:50;Saiu da cerca;0.45
+RRP;RWD4B32;Pro LOG;Não Mapeado;07/08/2025 10:24;07/08/2025 10:50;Saiu da cerca;0.43
+RRP;RWD4B32;Fábrica;Fábrica;07/08/2025 10:50;07/08/2025 11:33;Saiu da cerca;0.72
+RRP;RWD4B32;Carregamento;Carregamento;07/08/2025 10:50;07/08/2025 11:18;Saiu da cerca;0.47
+RRP;RWD4B32;Enlonamento RRP;Parada Operacional;07/08/2025 10:50;07/08/2025 11:33;Saiu da cerca;0.71
+RRP;RWB3C06;Carregamento;Carregamento;07/08/2025 12:29;;Entrou na cerca;0.0
+RRP;RWF6G80;Oficina JSL;Manutenção;07/08/2025 07:19;07/08/2025 12:51;Saiu da cerca;5.53
+RRP;SYD5G54;Descarga;Descarga;07/08/2025 08:48;;Entrou na cerca;0.0
+RRP;FOW8J57;Descarga INO;Não Mapeado;07/08/2025 12:35;;Entrou na cerca;0.0
+RRP;SMG2D73;Terminal;Terminal;07/08/2025 08:27;07/08/2025 12:23;Saiu da cerca;3.93
+RRP;SMG2D73;Descarga;Descarga;07/08/2025 08:27;07/08/2025 12:23;Saiu da cerca;3.93
+RRP;SMG2D73;Patio Carregado INO;Parada Operacional;07/08/2025 08:27;07/08/2025 10:51;Saiu da cerca;2.4
+RRP;SMG2D73;Descarga Inocencia;Não Mapeado;07/08/2025 08:27;07/08/2025 12:23;Saiu da cerca;3.93
+RRP;SMG2D73;Patio Vazio INO;Parada Operacional;07/08/2025 10:51;07/08/2025 11:36;Saiu da cerca;0.76
+RRP;SMG2D73;Descarga INO;Não Mapeado;07/08/2025 10:53;07/08/2025 12:23;Saiu da cerca;1.49
+RRP;SMG2D73;Descarga Inocencia;Não Mapeado;07/08/2025 12:38;07/08/2025 12:42;Saiu da cerca;0.07
+RRP;SMG5F48;Agua Clara;Parada Operacional;07/08/2025 09:24;07/08/2025 09:35;Saiu da cerca;0.18
+RRP;SMG5F48;Descarga Inocencia;Não Mapeado;07/08/2025 11:56;07/08/2025 12:01;Saiu da cerca;0.08
+RRP;SMG6H57;Abastecimento Frotas RRP;Parada Operacional;07/08/2025 07:45;07/08/2025 08:37;Saiu da cerca;0.86
+RRP;SMG6H57;Pro LOG;Não Mapeado;07/08/2025 08:35;07/08/2025 08:37;Saiu da cerca;0.02
+RRP;SMG6H57;Buffer frotas ;Parada Operacional;07/08/2025 08:37;07/08/2025 09:10;Saiu da cerca;0.56
+RRP;SMG6H57;Fábrica;Fábrica;07/08/2025 09:12;07/08/2025 10:07;Saiu da cerca;0.92
+RRP;SMG6H57;Carregamento;Carregamento;07/08/2025 09:12;07/08/2025 09:42;Saiu da cerca;0.5
+RRP;SMG6H57;Enlonamento RRP;Parada Operacional;07/08/2025 09:12;07/08/2025 09:16;Saiu da cerca;0.07
+RRP;SMG6H57;Buffer frotas ;Parada Operacional;07/08/2025 10:09;07/08/2025 10:34;Saiu da cerca;0.41
+RRP;SMG6H57;Agua Clara;Parada Operacional;07/08/2025 11:53;07/08/2025 12:02;Saiu da cerca;0.15
+RRP;SMG9B17;Carregamento Fabrica RRP;Fábrica;07/08/2025 07:52;07/08/2025 08:10;Saiu da cerca;0.29
+RRP;SMG9B17;Enlonamento RRP;Parada Operacional;07/08/2025 07:52;07/08/2025 08:10;Saiu da cerca;0.29
+RRP;SMG9B17;Buffer frotas ;Parada Operacional;07/08/2025 08:10;07/08/2025 08:20;Saiu da cerca;0.17
+RRP;SMG9B17;Posto Mutum;Parada Operacional;07/08/2025 09:10;07/08/2025 09:12;Saiu da cerca;0.03
+RRP;SMG9B17;Agua Clara;Parada Operacional;07/08/2025 09:40;07/08/2025 09:52;Saiu da cerca;0.21
+RRP;SMG9C17;Fábrica;Fábrica;07/08/2025 07:38;07/08/2025 08:09;Saiu da cerca;0.51
+RRP;SMG9C17;Carregamento;Carregamento;07/08/2025 07:38;07/08/2025 08:03;Saiu da cerca;0.41
+RRP;SMG9C17;Enlonamento RRP;Parada Operacional;07/08/2025 08:05;07/08/2025 08:07;Saiu da cerca;0.03
+RRP;SMG9C17;Agua Clara;Parada Operacional;07/08/2025 09:41;07/08/2025 09:50;Saiu da cerca;0.15
+RRP;SMG9D17;Descarga INO;Não Mapeado;07/08/2025 12:51;;Entrou na cerca;0.0
+RRP;SYD5G28;Descarga INO;Não Mapeado;07/08/2025 12:27;;Entrou na cerca;0.0
+RRP;SYD5G54;Descarga INO;Não Mapeado;07/08/2025 11:29;;Entrou na cerca;0.0
+RRP;SYL4A18;Descarga INO;Não Mapeado;07/08/2025 12:08;;Entrou na cerca;0.0
+RRP;SMG9D17;Patio Carregado INO;Parada Operacional;07/08/2025 09:47;07/08/2025 12:51;Saiu da cerca;3.08
+RRP;FOW8J57;Descarga Inocencia;Não Mapeado;07/08/2025 09:46;;Entrou na cerca;0.0
+RRP;GBJ0J68;Descarga Inocencia;Não Mapeado;07/08/2025 12:25;;Entrou na cerca;0.0
+RRP;SMG9C17;Descarga Inocencia;Não Mapeado;07/08/2025 12:12;;Entrou na cerca;0.0
+RRP;SMG9E17;Descarga Inocencia;Não Mapeado;07/08/2025 08:23;07/08/2025 12:11;Saiu da cerca;3.81
+RRP;SMG9E17;Terminal Inocencia;Terminal;07/08/2025 08:24;07/08/2025 12:11;Saiu da cerca;3.79
+RRP;SMG9E17;Patio Carregado INO;Parada Operacional;07/08/2025 08:24;07/08/2025 12:11;Saiu da cerca;3.79
+RRP;SMG9I17;Descarga Inocencia;Não Mapeado;07/08/2025 08:45;07/08/2025 12:44;Saiu da cerca;3.99
+RRP;SMG9I17;Terminal;Terminal;07/08/2025 08:49;07/08/2025 12:44;Saiu da cerca;3.92
+RRP;SMG9I17;Descarga;Descarga;07/08/2025 08:49;07/08/2025 12:34;Saiu da cerca;3.76
+RRP;SMG9I17;Patio Carregado INO;Parada Operacional;07/08/2025 08:49;07/08/2025 11:39;Saiu da cerca;2.84
+RRP;SMG9I17;Descarga INO;Não Mapeado;07/08/2025 11:39;07/08/2025 12:34;Saiu da cerca;0.91
+RRP;SMG9I17;Patio Vazio INO;Parada Operacional;07/08/2025 11:39;07/08/2025 11:55;Saiu da cerca;0.26
+RRP;SMG9I17;Patio Carregado INO;Parada Operacional;07/08/2025 12:34;07/08/2025 12:44;Saiu da cerca;0.16
+RRP;SMH0F11;Terminal;Terminal;07/08/2025 05:51;07/08/2025 08:37;Saiu da cerca;2.76
+RRP;SMH0F11;Descarga;Descarga;07/08/2025 05:51;07/08/2025 08:27;Saiu da cerca;2.59
+RRP;SMH0F11;Descarga Inocencia;Não Mapeado;07/08/2025 05:51;07/08/2025 08:23;Saiu da cerca;2.53
+RRP;SMH0F11;Descarga INO;Não Mapeado;07/08/2025 06:11;07/08/2025 08:23;Saiu da cerca;2.2
+RRP;SMH0F11;Patio Vazio INO;Parada Operacional;07/08/2025 06:11;07/08/2025 07:56;Saiu da cerca;1.74
+RRP;SMH0F11;Manutencao JSL RRP;Manutenção;07/08/2025 08:23;07/08/2025 08:25;Saiu da cerca;0.02
+RRP;SMH0F11;Manuten¿¿o Geral JSL RRP;Manutenção;07/08/2025 08:23;07/08/2025 08:25;Saiu da cerca;0.02
+RRP;SMH0F11;Descarga INO;Não Mapeado;07/08/2025 08:25;07/08/2025 08:27;Saiu da cerca;0.03
+RRP;SMH0F11;Descarga Inocencia;Não Mapeado;07/08/2025 08:25;07/08/2025 08:41;Saiu da cerca;0.27
+RRP;SMH0F11;Patio Carregado INO;Parada Operacional;07/08/2025 08:27;07/08/2025 08:37;Saiu da cerca;0.17
+RRP;SMH0F11;Agua Clara;Parada Operacional;07/08/2025 10:38;07/08/2025 10:48;Saiu da cerca;0.17
+RRP;SMH0F11;Posto Mutum;Parada Operacional;07/08/2025 11:28;07/08/2025 11:31;Saiu da cerca;0.05
+RRP;SMH0F11;Abastecimento Frotas RRP;Parada Operacional;07/08/2025 12:14;07/08/2025 12:25;Saiu da cerca;0.2
+RRP;SMH0F11;Pro LOG;Não Mapeado;07/08/2025 12:15;07/08/2025 12:25;Saiu da cerca;0.18
+RRP;SMG9D17;Descarga Inocencia;Não Mapeado;07/08/2025 09:47;;Entrou na cerca;0.0
+RRP;SMH0F11;Carregamento;Carregamento;07/08/2025 12:27;07/08/2025 12:59;Saiu da cerca;0.53
+RRP;SMH0F11;Enlonamento RRP;Parada Operacional;07/08/2025 12:27;07/08/2025 12:37;Saiu da cerca;0.17
+TLS;SYD5F88;Carregamento Fabrica;Fábrica;07/08/2025 06:53;07/08/2025 08:03;Saiu da cerca;1.16
+TLS;SYD5F88;TRAJETO FABRICA X PA;Não Mapeado;07/08/2025 08:10;07/08/2025 08:10;Saiu da cerca;0.01
+TLS;SYD5F88;AREA EXTERNA SUZANO;Parada Operacional;07/08/2025 08:10;07/08/2025 08:13;Saiu da cerca;0.05
+TLS;SYD5F88;TRAJETO FABRICA X PA;Não Mapeado;07/08/2025 08:15;07/08/2025 09:04;Saiu da cerca;0.82
+TLS;SYD5F88;TRAJETO PA X APARECIDA 1;Não Mapeado;07/08/2025 09:04;07/08/2025 09:41;Saiu da cerca;0.62
+TLS;SYD5F88;TRAJETO PA X APARECIDA 2;Não Mapeado;07/08/2025 09:50;07/08/2025 10:48;Saiu da cerca;0.97
+TLS;SYD5F88;SELVIRIA;Parada Operacional;07/08/2025 10:09;07/08/2025 10:16;Saiu da cerca;0.1
+TLS;SYD5F88;TRAJETO PA X APARECIDA 3;Não Mapeado;07/08/2025 10:48;07/08/2025 11:21;Saiu da cerca;0.56
+RRP;SYD5F91;Descarga Inocencia;Não Mapeado;07/08/2025 12:55;;Entrou na cerca;0.0
+RRP;SYD5F90;Fábrica;Fábrica;07/08/2025 10:03;07/08/2025 10:33;Saiu da cerca;0.5
+RRP;SYD5F90;Carregamento;Carregamento;07/08/2025 10:03;07/08/2025 10:18;Saiu da cerca;0.24
+RRP;SYD5F90;Enlonamento RRP;Parada Operacional;07/08/2025 10:19;07/08/2025 10:21;Saiu da cerca;0.04
+RRP;SYD5F90;Buffer frotas ;Parada Operacional;07/08/2025 10:34;07/08/2025 10:51;Saiu da cerca;0.28
+RRP;SYD5F90;Agua Clara;Parada Operacional;07/08/2025 12:21;07/08/2025 12:30;Saiu da cerca;0.15
+RRP;SYD5F91;Agua Clara;Parada Operacional;07/08/2025 06:02;07/08/2025 09:35;Saiu da cerca;3.55
+RRP;SYD5F91;PA AGUA CLARA;Ponto Apoio;07/08/2025 06:06;07/08/2025 09:27;Saiu da cerca;3.36
+RRP;SYD5F91;Agua Clara;Parada Operacional;07/08/2025 11:43;07/08/2025 12:05;Saiu da cerca;0.37
+RRP;SYD5F91;Terminal;Terminal;07/08/2025 12:05;07/08/2025 12:40;Saiu da cerca;0.57
+RRP;SYD5F91;Patio Carregado INO;Parada Operacional;07/08/2025 12:05;07/08/2025 12:40;Saiu da cerca;0.57
+RRP;SYD5F91;Descarga Inocencia;Não Mapeado;07/08/2025 12:05;07/08/2025 12:40;Saiu da cerca;0.57
+RRP;SYD5F91;Agua Clara;Parada Operacional;07/08/2025 12:40;07/08/2025 12:55;Saiu da cerca;0.25
+RRP;SYD5F96;Descarga Inocencia;Não Mapeado;07/08/2025 10:57;;Entrou na cerca;0.0
+RRP;SYD5F99;Descarga Inocencia;Não Mapeado;07/08/2025 11:17;;Entrou na cerca;0.0
+RRP;SYD5F93;Fábrica;Fábrica;07/08/2025 07:45;07/08/2025 08:36;Saiu da cerca;0.84
+RRP;SYD5F93;Carregamento;Carregamento;07/08/2025 07:45;07/08/2025 08:36;Saiu da cerca;0.84
+RRP;SYD5F93;Buffer frotas ;Parada Operacional;07/08/2025 08:38;07/08/2025 10:56;Saiu da cerca;2.3
+RRP;SYD5F93;Agua Clara;Parada Operacional;07/08/2025 12:11;07/08/2025 12:49;Saiu da cerca;0.63
+RRP;SYD5F93;PA AGUA CLARA;Ponto Apoio;07/08/2025 12:13;07/08/2025 12:41;Saiu da cerca;0.46
+TLS;SYD5F94;Carregamento Fabrica;Fábrica;07/08/2025 07:03;07/08/2025 08:14;Saiu da cerca;1.18
+TLS;SYD5F94;TRAJETO FABRICA X PA;Não Mapeado;07/08/2025 08:20;07/08/2025 09:09;Saiu da cerca;0.8
+TLS;SYD5F94;TRAJETO PA X APARECIDA 1;Não Mapeado;07/08/2025 09:09;07/08/2025 09:45;Saiu da cerca;0.61
+TLS;SYD5F94;MONTANINI;Parada Operacional;07/08/2025 09:12;07/08/2025 09:13;Saiu da cerca;0.01
+TLS;SYD5F94;TRAJETO PA X APARECIDA 1;Não Mapeado;07/08/2025 09:46;07/08/2025 09:51;Saiu da cerca;0.08
+TLS;SYD5F94;TRAJETO PA X APARECIDA 2;Não Mapeado;07/08/2025 09:51;07/08/2025 10:54;Saiu da cerca;1.05
+TLS;SYD5F94;SELVIRIA;Parada Operacional;07/08/2025 10:18;07/08/2025 10:20;Saiu da cerca;0.04
+TLS;SYD5F94;TRAJETO PA X APARECIDA 3;Não Mapeado;07/08/2025 10:54;07/08/2025 11:15;Saiu da cerca;0.35
+RRP;SYD5G01;Descarga Inocencia;Não Mapeado;07/08/2025 10:59;;Entrou na cerca;0.0
+RRP;SYD5F96;Agua Clara;Parada Operacional;07/08/2025 08:38;07/08/2025 08:45;Saiu da cerca;0.12
+RRP;SYD5G04;Descarga Inocencia;Não Mapeado;07/08/2025 09:56;;Entrou na cerca;0.0
+RRP;SYD5F96;Terminal Inocencia;Terminal;07/08/2025 11:12;07/08/2025 11:21;Saiu da cerca;0.15
+RRP;SYD5F96;Patio Carregado INO;Parada Operacional;07/08/2025 11:12;07/08/2025 11:21;Saiu da cerca;0.15
+RRP;SYD5F99;Terminal;Terminal;07/08/2025 09:47;07/08/2025 11:02;Saiu da cerca;1.24
+RRP;SYD5F99;Patio Carregado INO;Parada Operacional;07/08/2025 09:47;07/08/2025 11:02;Saiu da cerca;1.24
+RRP;SYD5F99;Descarga Inocencia;Não Mapeado;07/08/2025 09:47;07/08/2025 11:02;Saiu da cerca;1.24
+RRP;SYD5G19;Descarga Inocencia;Não Mapeado;07/08/2025 09:56;;Entrou na cerca;0.0
+RRP;SYD5G24;Descarga Inocencia;Não Mapeado;07/08/2025 10:08;;Entrou na cerca;0.0
+RRP;SYD5G01;Agua Clara;Parada Operacional;07/08/2025 07:44;07/08/2025 08:48;Saiu da cerca;1.07
+RRP;SYD5G01;PA AGUA CLARA;Ponto Apoio;07/08/2025 07:47;07/08/2025 08:30;Saiu da cerca;0.72
+RRP;SYD5G28;Descarga Inocencia;Não Mapeado;07/08/2025 09:30;;Entrou na cerca;0.0
+RRP;SYD5G34;Descarga Inocencia;Não Mapeado;07/08/2025 10:58;;Entrou na cerca;0.0
+RRP;SYD5G37;Descarga Inocencia;Não Mapeado;07/08/2025 11:17;;Entrou na cerca;0.0
+RRP;SYD5G54;Descarga Inocencia;Não Mapeado;07/08/2025 08:43;;Entrou na cerca;0.0
+RRP;SYD5G57;Descarga Inocencia;Não Mapeado;07/08/2025 08:51;;Entrou na cerca;0.0
+RRP;SYD5G61;Descarga Inocencia;Não Mapeado;07/08/2025 11:27;;Entrou na cerca;0.0
+RRP;SYD5G05;Agua Clara;Parada Operacional;07/08/2025 07:45;07/08/2025 10:05;Saiu da cerca;2.35
+RRP;SYD5G05;PA AGUA CLARA;Ponto Apoio;07/08/2025 07:49;07/08/2025 09:57;Saiu da cerca;2.14
+RRP;SYD5G10;Agua Clara;Parada Operacional;07/08/2025 10:24;07/08/2025 11:04;Saiu da cerca;0.66
+RRP;SYD5G10;PA AGUA CLARA;Ponto Apoio;07/08/2025 10:24;07/08/2025 11:04;Saiu da cerca;0.66
+RRP;SYD5G16;Descarga Inocencia;Não Mapeado;07/08/2025 05:56;07/08/2025 09:22;Saiu da cerca;3.43
+RRP;SYD5G16;Terminal;Terminal;07/08/2025 07:09;07/08/2025 09:44;Saiu da cerca;2.59
+RRP;SYD5G16;Descarga;Descarga;07/08/2025 07:09;07/08/2025 09:24;Saiu da cerca;2.25
+RRP;SYD5G16;Descarga INO;Não Mapeado;07/08/2025 07:09;07/08/2025 09:22;Saiu da cerca;2.21
+RRP;SYD5G16;Patio Vazio INO;Parada Operacional;07/08/2025 07:09;07/08/2025 08:02;Saiu da cerca;0.88
+RRP;SYD5G16;Descarga INO;Não Mapeado;07/08/2025 09:24;07/08/2025 09:26;Saiu da cerca;0.03
+RRP;SYD5G16;Descarga Inocencia;Não Mapeado;07/08/2025 09:24;07/08/2025 09:44;Saiu da cerca;0.33
+RRP;SYD5G16;Patio Vazio INO;Parada Operacional;07/08/2025 09:24;07/08/2025 09:26;Saiu da cerca;0.03
+RRP;SYD5G16;Patio Carregado INO;Parada Operacional;07/08/2025 09:26;07/08/2025 09:44;Saiu da cerca;0.3
+RRP;SYD5G16;Agua Clara;Parada Operacional;07/08/2025 11:42;07/08/2025 12:01;Saiu da cerca;0.32
+RRP;SYD5G18;Carregamento Fabrica RRP;Fábrica;07/08/2025 10:05;07/08/2025 10:35;Saiu da cerca;0.49
+RRP;SYD5G18;Enlonamento RRP;Parada Operacional;07/08/2025 10:05;07/08/2025 10:35;Saiu da cerca;0.49
+RRP;SYD5G18;Agua Clara;Parada Operacional;07/08/2025 11:35;07/08/2025 12:03;Saiu da cerca;0.46
+RRP;SYD5G63;Descarga Inocencia;Não Mapeado;07/08/2025 11:30;;Entrou na cerca;0.0
+RRP;SYE7D10;Descarga Inocencia;Não Mapeado;07/08/2025 12:44;;Entrou na cerca;0.0
+RRP;SYL4A18;Descarga Inocencia;Não Mapeado;07/08/2025 09:31;;Entrou na cerca;0.0
+RRP;SYD5G20;Posto Mutum;Parada Operacional;07/08/2025 08:09;07/08/2025 09:21;Saiu da cerca;1.19
+RRP;SYD5G20;Agua Clara;Parada Operacional;07/08/2025 09:55;07/08/2025 12:11;Saiu da cerca;2.28
+RRP;SYD5G20;PA AGUA CLARA;Ponto Apoio;07/08/2025 09:59;07/08/2025 12:05;Saiu da cerca;2.11
+RRP;SYD5G21;Fábrica;Fábrica;07/08/2025 12:07;07/08/2025 12:49;Saiu da cerca;0.69
+RRP;SYD5G21;Carregamento;Carregamento;07/08/2025 12:07;07/08/2025 12:37;Saiu da cerca;0.49
+RRP;SYD5G21;Enlonamento RRP;Parada Operacional;07/08/2025 12:11;07/08/2025 12:13;Saiu da cerca;0.03
+RRP;SYL5J46;Descarga Inocencia;Não Mapeado;07/08/2025 10:09;;Entrou na cerca;0.0
+RRP;RWB3C06;Fábrica;Fábrica;07/08/2025 12:29;;Entrou na cerca;0.0
+RRP;SMH0F11;Fábrica;Fábrica;07/08/2025 12:27;;Entrou na cerca;0.0
+TLS;SYD5F88;FILA DESCARGA APT;Terminal;07/08/2025 11:18;;Entrou na cerca;0.0
+TLS;SYD5F94;FILA DESCARGA APT;Terminal;07/08/2025 11:20;;Entrou na cerca;0.0
+RRP;SYD5G27;Descarga Inocencia;Não Mapeado;07/08/2025 08:26;07/08/2025 12:41;Saiu da cerca;4.25
+RRP;SYD5G27;Terminal;Terminal;07/08/2025 10:42;07/08/2025 12:41;Saiu da cerca;2.0
+RRP;SYD5G27;Descarga;Descarga;07/08/2025 10:42;07/08/2025 12:25;Saiu da cerca;1.72
+RRP;SYD5G27;Patio Carregado INO;Parada Operacional;07/08/2025 10:42;07/08/2025 10:56;Saiu da cerca;0.25
+RRP;SYD5G27;Descarga INO;Não Mapeado;07/08/2025 10:56;07/08/2025 12:25;Saiu da cerca;1.47
+RRP;SYD5G27;Patio Vazio INO;Parada Operacional;07/08/2025 10:56;07/08/2025 11:30;Saiu da cerca;0.55
+RRP;SYD5G27;Patio Carregado INO;Parada Operacional;07/08/2025 12:25;07/08/2025 12:41;Saiu da cerca;0.28
+TLS;TJM9E93;FILA DESCARGA APT;Terminal;07/08/2025 11:18;;Entrou na cerca;0.0
+RRP;SYD5G28;Terminal;Terminal;07/08/2025 11:23;07/08/2025 12:23;Saiu da cerca;1.0
+RRP;SYD5G28;Patio Carregado INO;Parada Operacional;07/08/2025 11:23;07/08/2025 12:23;Saiu da cerca;1.0
+RRP;SYD5G35;Oficina JSL;Manutenção;07/08/2025 09:21;;Entrou na cerca;0.0
+RRP;SYD5G23;PA AGUA CLARA;Ponto Apoio;07/08/2025 08:59;;Entrou na cerca;0.0
+RRP;SYD5G30;Oficina JSL;Manutenção;07/08/2025 01:51;07/08/2025 10:49;Saiu da cerca;8.97
+RRP;SYD5G30;Abastecimento Frotas RRP;Parada Operacional;07/08/2025 10:55;07/08/2025 11:03;Saiu da cerca;0.14
+RRP;SYD5G30;Pro LOG;Não Mapeado;07/08/2025 10:55;07/08/2025 11:03;Saiu da cerca;0.14
+RRP;SYD5G30;Buffer frotas ;Parada Operacional;07/08/2025 11:03;07/08/2025 11:19;Saiu da cerca;0.27
+RRP;SYD5G30;Oficina JSL;Manutenção;07/08/2025 11:25;07/08/2025 12:58;Saiu da cerca;1.55
+RRP;SYD5G31;Terminal Inocencia;Terminal;07/08/2025 05:48;07/08/2025 08:10;Saiu da cerca;2.36
+RRP;SYD5G31;Descarga Inocencia;Não Mapeado;07/08/2025 05:48;07/08/2025 08:10;Saiu da cerca;2.36
+RRP;SYD5G31;Patio Carregado INO;Parada Operacional;07/08/2025 07:55;07/08/2025 08:10;Saiu da cerca;0.25
+RRP;SYD5G31;Agua Clara;Parada Operacional;07/08/2025 10:07;07/08/2025 10:17;Saiu da cerca;0.17
+RRP;SYD5G31;Abastecimento Frotas RRP;Parada Operacional;07/08/2025 11:30;07/08/2025 11:38;Saiu da cerca;0.13
+RRP;SYD5G31;Pro LOG;Não Mapeado;07/08/2025 11:30;07/08/2025 11:38;Saiu da cerca;0.13
+RRP;SYD5G31;Fábrica;Fábrica;07/08/2025 11:44;07/08/2025 12:41;Saiu da cerca;0.96
+RRP;SYD5G31;Carregamento;Carregamento;07/08/2025 11:44;07/08/2025 12:01;Saiu da cerca;0.28
+RRP;SYD5G31;Enlonamento RRP;Parada Operacional;07/08/2025 11:44;07/08/2025 12:41;Saiu da cerca;0.96
+RRP;SYD5G50;PA AGUA CLARA;Ponto Apoio;07/08/2025 11:24;;Entrou na cerca;0.0
+RRP;SYD5G32;Buffer frotas ;Parada Operacional;07/08/2025 05:12;07/08/2025 09:12;Saiu da cerca;4.0
+RRP;SYD5G32;Fábrica;Fábrica;07/08/2025 09:14;07/08/2025 10:01;Saiu da cerca;0.78
+RRP;SYD5G32;Carregamento;Carregamento;07/08/2025 09:14;07/08/2025 09:46;Saiu da cerca;0.53
+RRP;SYD5G32;Enlonamento RRP;Parada Operacional;07/08/2025 09:14;07/08/2025 09:51;Saiu da cerca;0.62
+RRP;SYD5G32;Buffer frotas ;Parada Operacional;07/08/2025 10:01;07/08/2025 10:30;Saiu da cerca;0.49
+RRP;SYD5G32;Agua Clara;Parada Operacional;07/08/2025 11:46;07/08/2025 11:54;Saiu da cerca;0.13
+RRP;SYD5G33;Terminal;Terminal;07/08/2025 06:53;07/08/2025 11:22;Saiu da cerca;4.48
+RRP;SYD5G33;Descarga;Descarga;07/08/2025 06:53;07/08/2025 11:04;Saiu da cerca;4.18
+RRP;SYD5G33;Patio Carregado INO;Parada Operacional;07/08/2025 06:53;07/08/2025 10:04;Saiu da cerca;3.19
+RRP;SYD5G33;Descarga Inocencia;Não Mapeado;07/08/2025 06:53;07/08/2025 11:24;Saiu da cerca;4.52
+RRP;SYD5G33;Patio Vazio INO;Parada Operacional;07/08/2025 10:04;07/08/2025 10:12;Saiu da cerca;0.14
+RRP;SYD5G33;Descarga INO;Não Mapeado;07/08/2025 10:08;07/08/2025 11:02;Saiu da cerca;0.9
+RRP;SYD5G33;Patio Vazio INO;Parada Operacional;07/08/2025 11:04;07/08/2025 11:07;Saiu da cerca;0.05
+RRP;SYD5G33;Patio Carregado INO;Parada Operacional;07/08/2025 11:07;07/08/2025 11:22;Saiu da cerca;0.25
+RRP;SYD5G34;Agua Clara;Parada Operacional;07/08/2025 08:36;07/08/2025 08:45;Saiu da cerca;0.15
+RRP;SYD5G34;PA AGUA CLARA;Ponto Apoio;07/08/2025 08:36;07/08/2025 08:38;Saiu da cerca;0.03
+RRP;SYD5G58;PA AGUA CLARA;Ponto Apoio;07/08/2025 08:04;;Entrou na cerca;0.0
+RRP;SYD5G34;Terminal;Terminal;07/08/2025 10:59;07/08/2025 12:45;Saiu da cerca;1.78
+RRP;SYD5G34;Patio Carregado INO;Parada Operacional;07/08/2025 11:17;07/08/2025 12:45;Saiu da cerca;1.48
+RRP;SYD5G35;Agua Clara;Parada Operacional;07/08/2025 06:20;07/08/2025 08:12;Saiu da cerca;1.86
+RRP;SYD5G35;PA AGUA CLARA;Ponto Apoio;07/08/2025 07:20;07/08/2025 08:10;Saiu da cerca;0.84
+RRP;SMG9C17;Patio Carregado INO;Parada Operacional;07/08/2025 12:12;;Entrou na cerca;0.0
+RRP;SYD5G36;Agua Clara;Parada Operacional;07/08/2025 09:41;07/08/2025 10:00;Saiu da cerca;0.32
+RRP;SYD5G36;Abastecimento Frotas RRP;Parada Operacional;07/08/2025 11:11;07/08/2025 11:38;Saiu da cerca;0.45
+RRP;SYD5G36;Pro LOG;Não Mapeado;07/08/2025 11:11;07/08/2025 11:38;Saiu da cerca;0.45
+RRP;SYD5G36;Carregamento;Carregamento;07/08/2025 11:38;07/08/2025 12:02;Saiu da cerca;0.4
+RRP;SYD5G36;Fábrica;Fábrica;07/08/2025 11:38;07/08/2025 12:06;Saiu da cerca;0.47
+RRP;SYD5G36;Buffer frotas ;Parada Operacional;07/08/2025 12:06;07/08/2025 12:29;Saiu da cerca;0.38
+RRP;SYD5G37;Agua Clara;Parada Operacional;07/08/2025 08:46;07/08/2025 08:54;Saiu da cerca;0.13
+RRP;SYD5F91;Patio Carregado INO;Parada Operacional;07/08/2025 12:55;;Entrou na cerca;0.0
+RRP;SYD5F99;Patio Carregado INO;Parada Operacional;07/08/2025 11:17;;Entrou na cerca;0.0
+RRP;SYD5G01;Patio Carregado INO;Parada Operacional;07/08/2025 11:03;;Entrou na cerca;0.0
+RRP;SYD5G44;Oficina JSL;Manutenção;07/08/2025 08:58;07/08/2025 10:56;Saiu da cerca;1.97
+RRP;SYD5G44;Abastecimento Frotas RRP;Parada Operacional;07/08/2025 11:04;07/08/2025 11:16;Saiu da cerca;0.2
+RRP;SYD5G44;Pro LOG;Não Mapeado;07/08/2025 11:04;07/08/2025 11:16;Saiu da cerca;0.2
+RRP;SYD5G44;Fábrica;Fábrica;07/08/2025 11:17;07/08/2025 11:55;Saiu da cerca;0.63
+RRP;SYD5G44;Carregamento;Carregamento;07/08/2025 11:17;07/08/2025 11:37;Saiu da cerca;0.33
+RRP;SYD5G44;Enlonamento RRP;Parada Operacional;07/08/2025 11:37;07/08/2025 11:39;Saiu da cerca;0.04
+RRP;SYD5G44;Buffer frotas ;Parada Operacional;07/08/2025 11:55;07/08/2025 12:27;Saiu da cerca;0.54
+RRP;SYD5G48;Descarga Inocencia;Não Mapeado;07/08/2025 06:37;07/08/2025 10:39;Saiu da cerca;4.04
+RRP;SYD5G48;Terminal;Terminal;07/08/2025 06:41;07/08/2025 10:35;Saiu da cerca;3.91
+RRP;SYD5G48;Descarga;Descarga;07/08/2025 06:41;07/08/2025 10:23;Saiu da cerca;3.71
+RRP;SYD5G48;Patio Carregado INO;Parada Operacional;07/08/2025 06:41;07/08/2025 09:03;Saiu da cerca;2.37
+RRP;SYD5G48;Descarga INO;Não Mapeado;07/08/2025 09:03;07/08/2025 10:21;Saiu da cerca;1.31
+RRP;SYD5G48;Patio Vazio INO;Parada Operacional;07/08/2025 09:03;07/08/2025 09:09;Saiu da cerca;0.1
+RRP;SYD5G48;Descarga INO;Não Mapeado;07/08/2025 10:23;07/08/2025 10:25;Saiu da cerca;0.02
+RRP;SYD5G48;Patio Vazio INO;Parada Operacional;07/08/2025 10:23;07/08/2025 10:25;Saiu da cerca;0.02
+RRP;SYD5G48;Patio Carregado INO;Parada Operacional;07/08/2025 10:25;07/08/2025 10:35;Saiu da cerca;0.18
+RRP;SYD5G49;Patio Carregado INO;Parada Operacional;07/08/2025 06:46;07/08/2025 09:04;Saiu da cerca;2.29
+RRP;SYD5G49;Descarga INO;Não Mapeado;07/08/2025 09:04;07/08/2025 10:44;Saiu da cerca;1.68
+RRP;SYD5G49;Patio Vazio INO;Parada Operacional;07/08/2025 09:04;07/08/2025 09:47;Saiu da cerca;0.72
+RRP;SYD5G49;Desc. INO;Descarga;07/08/2025 09:47;07/08/2025 10:44;Saiu da cerca;0.95
+RRP;SYD5G04;Patio Carregado INO;Parada Operacional;07/08/2025 10:00;;Entrou na cerca;0.0
+RRP;SYD5G50;Terminal;Terminal;07/08/2025 05:54;07/08/2025 09:08;Saiu da cerca;3.24
+RRP;SYD5G50;Descarga;Descarga;07/08/2025 05:54;07/08/2025 08:56;Saiu da cerca;3.03
+RRP;SYD5G50;Descarga Inocencia;Não Mapeado;07/08/2025 05:54;07/08/2025 09:12;Saiu da cerca;3.31
+RRP;SYD5G50;Descarga INO;Não Mapeado;07/08/2025 06:30;07/08/2025 08:56;Saiu da cerca;2.43
+RRP;SYD5G50;Patio Vazio INO;Parada Operacional;07/08/2025 06:30;07/08/2025 07:59;Saiu da cerca;1.49
+RRP;SYD5G50;Patio Carregado INO;Parada Operacional;07/08/2025 08:56;07/08/2025 09:08;Saiu da cerca;0.21
+RRP;SYD5G19;Patio Carregado INO;Parada Operacional;07/08/2025 10:02;;Entrou na cerca;0.0
+RRP;SYD5G24;Patio Carregado INO;Parada Operacional;07/08/2025 10:08;;Entrou na cerca;0.0
+RRP;SYD5G51;Fábrica;Fábrica;07/08/2025 10:14;07/08/2025 10:50;Saiu da cerca;0.6
+RRP;SYD5G51;Carregamento;Carregamento;07/08/2025 10:14;07/08/2025 10:33;Saiu da cerca;0.32
+RRP;SYD5G51;Enlonamento RRP;Parada Operacional;07/08/2025 10:16;07/08/2025 10:37;Saiu da cerca;0.35
+RRP;SYD5G51;Buffer frotas ;Parada Operacional;07/08/2025 10:50;07/08/2025 12:57;Saiu da cerca;2.11
+RRP;SYD5G52;Abastecimento Frotas RRP;Parada Operacional;07/08/2025 09:39;07/08/2025 10:05;Saiu da cerca;0.43
+RRP;SYD5G52;Pro LOG;Não Mapeado;07/08/2025 09:39;07/08/2025 10:05;Saiu da cerca;0.43
+RRP;SYD5G52;Oficina JSL;Manutenção;07/08/2025 10:05;07/08/2025 11:03;Saiu da cerca;0.97
+RRP;SYD5G52;Fábrica;Fábrica;07/08/2025 11:03;07/08/2025 12:02;Saiu da cerca;0.99
+RRP;SYD5G52;Carregamento;Carregamento;07/08/2025 11:03;07/08/2025 11:29;Saiu da cerca;0.44
+RRP;SYD5G52;Enlonamento RRP;Parada Operacional;07/08/2025 11:08;07/08/2025 11:47;Saiu da cerca;0.65
+RRP;SYD5G52;Buffer frotas ;Parada Operacional;07/08/2025 12:02;07/08/2025 12:17;Saiu da cerca;0.25
+RRP;SYD5G53;Oficina JSL;Manutenção;07/08/2025 00:24;07/08/2025 10:26;Saiu da cerca;10.04
+RRP;SYD5G53;Abastecimento Frotas RRP;Parada Operacional;07/08/2025 10:32;07/08/2025 10:46;Saiu da cerca;0.22
+RRP;SYD5G53;Pro LOG;Não Mapeado;07/08/2025 10:32;07/08/2025 10:46;Saiu da cerca;0.22
+RRP;SYD5G53;Fábrica;Fábrica;07/08/2025 10:46;07/08/2025 11:24;Saiu da cerca;0.64
+RRP;SYD5G53;Carregamento;Carregamento;07/08/2025 10:46;07/08/2025 11:10;Saiu da cerca;0.41
+RRP;SYD5G53;Enlonamento RRP;Parada Operacional;07/08/2025 10:46;07/08/2025 11:24;Saiu da cerca;0.64
+RRP;SYD5G37;Patio Carregado INO;Parada Operacional;07/08/2025 11:24;;Entrou na cerca;0.0
+RRP;SYD5G49;Patio Carregado INO;Parada Operacional;07/08/2025 10:44;;Entrou na cerca;0.0
+RRP;SYD5G57;Patio Carregado INO;Parada Operacional;07/08/2025 12:59;;Entrou na cerca;0.0
+RRP;SYD5G61;Patio Carregado INO;Parada Operacional;07/08/2025 11:29;;Entrou na cerca;0.0
+RRP;SYD5G54;Patio Carregado INO;Parada Operacional;07/08/2025 08:48;07/08/2025 11:29;Saiu da cerca;2.69
+RRP;SYD5G63;Patio Carregado INO;Parada Operacional;07/08/2025 11:30;;Entrou na cerca;0.0
+RRP;SYD5G54;Patio Vazio INO;Parada Operacional;07/08/2025 11:29;07/08/2025 12:22;Saiu da cerca;0.89
+RRP;SYD5G56;Terminal;Terminal;07/08/2025 07:21;07/08/2025 10:25;Saiu da cerca;3.06
+RRP;SYD5G56;Descarga;Descarga;07/08/2025 07:21;07/08/2025 09:54;Saiu da cerca;2.54
+RRP;SYD5G56;Patio Carregado INO;Parada Operacional;07/08/2025 07:21;07/08/2025 08:03;Saiu da cerca;0.69
+RRP;SYD5G56;Descarga Inocencia;Não Mapeado;07/08/2025 07:21;07/08/2025 10:27;Saiu da cerca;3.09
+RRP;SYD5G56;Descarga INO;Não Mapeado;07/08/2025 08:03;07/08/2025 09:54;Saiu da cerca;1.86
+RRP;SYD5G56;Patio Vazio INO;Parada Operacional;07/08/2025 08:03;07/08/2025 08:51;Saiu da cerca;0.81
+RRP;SYD5G56;Patio Carregado INO;Parada Operacional;07/08/2025 09:54;07/08/2025 10:25;Saiu da cerca;0.51
+RRP;SYE4C10;Patio Carregado INO;Parada Operacional;07/08/2025 11:27;;Entrou na cerca;0.0
+RRP;SYL5J46;Patio Carregado INO;Parada Operacional;07/08/2025 10:10;;Entrou na cerca;0.0
+RRP;SYD5G57;Descarga;Descarga;07/08/2025 08:53;07/08/2025 12:59;Saiu da cerca;4.1
+RRP;SYD5G57;Patio Carregado INO;Parada Operacional;07/08/2025 08:54;07/08/2025 12:15;Saiu da cerca;3.35
+RRP;SYD5G57;Descarga INO;Não Mapeado;07/08/2025 12:15;07/08/2025 12:43;Saiu da cerca;0.46
+RRP;SYD5G57;Patio Vazio INO;Parada Operacional;07/08/2025 12:15;07/08/2025 12:24;Saiu da cerca;0.15
+RRP;FOW8J57;Patio Vazio INO;Parada Operacional;07/08/2025 12:35;;Entrou na cerca;0.0
+RRP;SMG9D17;Patio Vazio INO;Parada Operacional;07/08/2025 12:51;;Entrou na cerca;0.0
+RRP;SYD5G28;Patio Vazio INO;Parada Operacional;07/08/2025 12:27;;Entrou na cerca;0.0
+TLS;SYD5G60;TRAJETO FABRICA X PA;Não Mapeado;07/08/2025 07:14;07/08/2025 08:03;Saiu da cerca;0.81
+TLS;SYD5G60;TRAJETO PA X APARECIDA 1;Não Mapeado;07/08/2025 08:03;07/08/2025 08:36;Saiu da cerca;0.55
+TLS;SYD5G60;MONTANINI;Parada Operacional;07/08/2025 08:05;07/08/2025 08:06;Saiu da cerca;0.01
+TLS;SYD5G60;TRAJETO PA X APARECIDA 2;Não Mapeado;07/08/2025 08:40;07/08/2025 09:48;Saiu da cerca;1.14
+TLS;SYD5G60;SELVIRIA;Parada Operacional;07/08/2025 09:14;07/08/2025 09:17;Saiu da cerca;0.05
+TLS;SYD5G60;TRAJETO PA X APARECIDA 3;Não Mapeado;07/08/2025 09:48;07/08/2025 10:18;Saiu da cerca;0.51
+TLS;SYD5G60;Terminal;Terminal;07/08/2025 10:15;07/08/2025 11:40;Saiu da cerca;1.41
+RRP;SYD5G61;Agua Clara;Parada Operacional;07/08/2025 08:52;07/08/2025 09:10;Saiu da cerca;0.3
+RRP;SYL4A18;Patio Vazio INO;Parada Operacional;07/08/2025 12:08;;Entrou na cerca;0.0
+RRP;RWF6G80;Pro LOG;Não Mapeado;07/08/2025 13:01;;Entrou na cerca;0.0
+RRP;SYD5G54;Terminal;Terminal;07/08/2025 08:48;;Entrou na cerca;0.0
+RRP;SYD5G62;Fábrica;Fábrica;07/08/2025 07:23;07/08/2025 08:33;Saiu da cerca;1.16
+RRP;SYD5G62;Carregamento;Carregamento;07/08/2025 07:23;07/08/2025 08:12;Saiu da cerca;0.82
+RRP;SYD5G62;Enlonamento RRP;Parada Operacional;07/08/2025 08:12;07/08/2025 08:33;Saiu da cerca;0.34
+RRP;SYD5G62;Buffer frotas ;Parada Operacional;07/08/2025 08:33;07/08/2025 09:15;Saiu da cerca;0.71
+RRP;SYD5G62;Agua Clara;Parada Operacional;07/08/2025 10:44;07/08/2025 10:44;Saiu da cerca;0.01
+RRP;SYD5G62;PA AGUA CLARA;Ponto Apoio;07/08/2025 10:44;07/08/2025 10:44;Saiu da cerca;0.01
+RRP;SYD5G62;Agua Clara;Parada Operacional;07/08/2025 10:55;07/08/2025 11:46;Saiu da cerca;0.85
+RRP;SYD5G62;PA AGUA CLARA;Ponto Apoio;07/08/2025 10:55;07/08/2025 11:38;Saiu da cerca;0.72
+RRP;SYD5G63;Agua Clara;Parada Operacional;07/08/2025 05:28;07/08/2025 08:53;Saiu da cerca;3.41
+RRP;SYD5G63;PA AGUA CLARA;Ponto Apoio;07/08/2025 07:28;07/08/2025 08:45;Saiu da cerca;1.28
+RRP;SYD5G57;Terminal;Terminal;07/08/2025 08:53;;Entrou na cerca;0.0
+RRP;FOW8J57;Terminal Inocencia;Terminal;07/08/2025 12:35;;Entrou na cerca;0.0
+RRP;SMG9C17;Terminal Inocencia;Terminal;07/08/2025 12:12;;Entrou na cerca;0.0
+RRP;SYD5G64;Abastecimento Frotas RRP;Parada Operacional;07/08/2025 08:40;07/08/2025 08:50;Saiu da cerca;0.17
+RRP;SYD5G64;Pro LOG;Não Mapeado;07/08/2025 08:40;07/08/2025 08:50;Saiu da cerca;0.17
+RRP;SYD5G64;Buffer frotas ;Parada Operacional;07/08/2025 08:50;07/08/2025 09:10;Saiu da cerca;0.32
+RRP;SYD5G64;Fábrica;Fábrica;07/08/2025 09:12;07/08/2025 09:54;Saiu da cerca;0.71
+RRP;SYD5G64;Carregamento;Carregamento;07/08/2025 09:12;07/08/2025 09:31;Saiu da cerca;0.31
+RRP;SYD5G64;Enlonamento RRP;Parada Operacional;07/08/2025 09:39;07/08/2025 09:41;Saiu da cerca;0.03
+RRP;SYD5G64;Buffer frotas ;Parada Operacional;07/08/2025 09:48;07/08/2025 10:29;Saiu da cerca;0.67
+RRP;SYD5G64;Agua Clara;Parada Operacional;07/08/2025 11:46;07/08/2025 12:16;Saiu da cerca;0.5
+RRP;SYD5G64;PA AGUA CLARA;Ponto Apoio;07/08/2025 11:48;07/08/2025 12:08;Saiu da cerca;0.33
+RRP;SYD5G65;Posto Mutum;Parada Operacional;07/08/2025 08:56;07/08/2025 09:38;Saiu da cerca;0.71
+RRP;SYD5G65;Agua Clara;Parada Operacional;07/08/2025 10:13;07/08/2025 10:26;Saiu da cerca;0.22
+RRP;SYD5G65;PA AGUA CLARA;Ponto Apoio;07/08/2025 10:24;07/08/2025 10:26;Saiu da cerca;0.03
+RRP;SYD5G65;Posto Mutum;Parada Operacional;07/08/2025 10:26;07/08/2025 10:36;Saiu da cerca;0.18
+RRP;SYD5G65;Agua Clara;Parada Operacional;07/08/2025 10:36;07/08/2025 11:50;Saiu da cerca;1.23
+RRP;SYD5G65;PA AGUA CLARA;Ponto Apoio;07/08/2025 10:36;07/08/2025 11:42;Saiu da cerca;1.1
+RRP;SYD5G67;Descarga Inocencia;Não Mapeado;07/08/2025 06:26;07/08/2025 11:06;Saiu da cerca;4.67
+RRP;SYD5G67;Terminal;Terminal;07/08/2025 06:30;07/08/2025 11:04;Saiu da cerca;4.57
+RRP;SYD5G67;Descarga;Descarga;07/08/2025 06:30;07/08/2025 10:39;Saiu da cerca;4.16
+RRP;SYD5G67;Patio Carregado INO;Parada Operacional;07/08/2025 06:30;07/08/2025 08:07;Saiu da cerca;1.62
+RRP;SYD5G67;Descarga INO;Não Mapeado;07/08/2025 08:07;07/08/2025 10:31;Saiu da cerca;2.41
+RRP;SYD5G67;Patio Vazio INO;Parada Operacional;07/08/2025 08:07;07/08/2025 09:15;Saiu da cerca;1.13
+RRP;SYD5G67;Descarga INO;Não Mapeado;07/08/2025 10:35;07/08/2025 10:39;Saiu da cerca;0.07
+RRP;SYD5G67;Patio Vazio INO;Parada Operacional;07/08/2025 10:39;07/08/2025 10:42;Saiu da cerca;0.05
+RRP;SYD5G67;Patio Carregado INO;Parada Operacional;07/08/2025 10:42;07/08/2025 11:04;Saiu da cerca;0.36
+RRP;SYE4C10;Patio Carregado INO;Parada Operacional;07/08/2025 07:23;07/08/2025 10:12;Saiu da cerca;2.8
+RRP;SYE4C10;Descarga INO;Não Mapeado;07/08/2025 10:12;07/08/2025 11:09;Saiu da cerca;0.96
+RRP;SYE4C10;Patio Vazio INO;Parada Operacional;07/08/2025 10:12;07/08/2025 10:50;Saiu da cerca;0.65
+RRP;SYE4C10;Desc. INO;Descarga;07/08/2025 10:50;07/08/2025 11:25;Saiu da cerca;0.57
+RRP;SYE4C10;Descarga INO;Não Mapeado;07/08/2025 11:23;07/08/2025 11:27;Saiu da cerca;0.07
+RRP;SYE4C10;Patio Vazio INO;Parada Operacional;07/08/2025 11:25;07/08/2025 11:27;Saiu da cerca;0.03
+RRP;SMG9D17;Terminal Inocencia;Terminal;07/08/2025 09:47;;Entrou na cerca;0.0
+RRP;SYE7D10;Carregamento Fabrica RRP;Fábrica;07/08/2025 06:59;07/08/2025 08:13;Saiu da cerca;1.24
+RRP;SYE7D10;Enlonamento RRP;Parada Operacional;07/08/2025 08:13;07/08/2025 08:13;Saiu da cerca;0.01
+RRP;SYE7D10;Buffer frotas ;Parada Operacional;07/08/2025 08:27;07/08/2025 08:49;Saiu da cerca;0.36
+RRP;SYE7D10;Agua Clara;Parada Operacional;07/08/2025 10:04;07/08/2025 10:10;Saiu da cerca;0.1
+RRP;SYD5G01;Terminal Inocencia;Terminal;07/08/2025 11:03;;Entrou na cerca;0.0
+RRP;SYE7D11;Fábrica;Fábrica;07/08/2025 09:11;07/08/2025 09:47;Saiu da cerca;0.59
+RRP;SYE7D11;Carregamento;Carregamento;07/08/2025 09:11;07/08/2025 09:31;Saiu da cerca;0.33
+RRP;SYE7D11;Enlonamento RRP;Parada Operacional;07/08/2025 09:31;07/08/2025 09:35;Saiu da cerca;0.07
+RRP;SYE7D11;Buffer frotas ;Parada Operacional;07/08/2025 09:47;07/08/2025 10:34;Saiu da cerca;0.79
+RRP;SYE7D11;Agua Clara;Parada Operacional;07/08/2025 11:59;07/08/2025 12:08;Saiu da cerca;0.15
+RRP;SYE7D12;Terminal;Terminal;07/08/2025 06:21;07/08/2025 11:20;Saiu da cerca;4.98
+RRP;SYE7D12;Descarga;Descarga;07/08/2025 06:21;07/08/2025 10:10;Saiu da cerca;3.81
+RRP;SYE7D12;Patio Carregado INO;Parada Operacional;07/08/2025 06:21;07/08/2025 08:17;Saiu da cerca;1.93
+RRP;SYE7D12;Descarga Inocencia;Não Mapeado;07/08/2025 06:21;07/08/2025 11:20;Saiu da cerca;4.98
+RRP;SYE7D12;Descarga INO;Não Mapeado;07/08/2025 08:17;07/08/2025 10:10;Saiu da cerca;1.88
+RRP;SYE7D12;Patio Vazio INO;Parada Operacional;07/08/2025 08:17;07/08/2025 08:56;Saiu da cerca;0.66
+RRP;SYE7D12;Patio Carregado INO;Parada Operacional;07/08/2025 10:10;07/08/2025 11:20;Saiu da cerca;1.17
+RRP;SYE7D13;Descarga Inocencia;Não Mapeado;07/08/2025 06:50;07/08/2025 12:24;Saiu da cerca;5.56
+RRP;SYE7D13;Terminal;Terminal;07/08/2025 06:55;07/08/2025 12:24;Saiu da cerca;5.49
+RRP;SYE7D13;Descarga;Descarga;07/08/2025 06:55;07/08/2025 12:15;Saiu da cerca;5.33
+RRP;SYE7D13;Patio Carregado INO;Parada Operacional;07/08/2025 06:55;07/08/2025 10:08;Saiu da cerca;3.23
+RRP;SYE7D13;Descarga INO;Não Mapeado;07/08/2025 10:08;07/08/2025 12:09;Saiu da cerca;2.01
+RRP;SYE7D13;Patio Vazio INO;Parada Operacional;07/08/2025 10:08;07/08/2025 10:40;Saiu da cerca;0.53
+RRP;SYE7D13;Descarga INO;Não Mapeado;07/08/2025 12:11;07/08/2025 12:15;Saiu da cerca;0.05
+RRP;SYE7D13;Patio Carregado INO;Parada Operacional;07/08/2025 12:15;07/08/2025 12:24;Saiu da cerca;0.15
+RRP;SYE7D14;Descarga Inocencia;Não Mapeado;07/08/2025 07:37;07/08/2025 11:42;Saiu da cerca;4.09
+RRP;SYE7D14;Terminal;Terminal;07/08/2025 07:38;07/08/2025 11:42;Saiu da cerca;4.08
+RRP;SYE7D14;Descarga;Descarga;07/08/2025 07:38;07/08/2025 11:36;Saiu da cerca;3.97
+RRP;SYE7D14;Patio Carregado INO;Parada Operacional;07/08/2025 07:38;07/08/2025 09:55;Saiu da cerca;2.28
+RRP;SYE7D14;Descarga INO;Não Mapeado;07/08/2025 10:16;07/08/2025 11:34;Saiu da cerca;1.31
+RRP;SYE7D14;Patio Vazio INO;Parada Operacional;07/08/2025 10:16;07/08/2025 11:04;Saiu da cerca;0.8
+RRP;SYE7D14;Patio Carregado INO;Parada Operacional;07/08/2025 11:36;07/08/2025 11:42;Saiu da cerca;0.1
+RRP;SYE7D16;Agua Clara;Parada Operacional;07/08/2025 08:52;07/08/2025 11:41;Saiu da cerca;2.8
+RRP;SYE7D16;PA AGUA CLARA;Ponto Apoio;07/08/2025 09:02;07/08/2025 11:32;Saiu da cerca;2.5
+RRP;SYD5G04;Terminal Inocencia;Terminal;07/08/2025 10:00;;Entrou na cerca;0.0
+RRP;SYL4A18;Patio Carregado INO;Parada Operacional;07/08/2025 09:31;07/08/2025 12:08;Saiu da cerca;2.62
+RRP;SYD5G19;Terminal Inocencia;Terminal;07/08/2025 10:02;;Entrou na cerca;0.0
+RRP;SYD5G24;Terminal Inocencia;Terminal;07/08/2025 10:08;;Entrou na cerca;0.0
+RRP;SYD5G37;Terminal Inocencia;Terminal;07/08/2025 11:24;;Entrou na cerca;0.0
+RRP;SYL4A20;Agua Clara;Parada Operacional;07/08/2025 06:52;07/08/2025 10:11;Saiu da cerca;3.33
+RRP;SYL4A20;PA AGUA CLARA;Ponto Apoio;07/08/2025 07:48;07/08/2025 10:09;Saiu da cerca;2.36
+RRP;SYL4A20;Abastecimento Frotas RRP;Parada Operacional;07/08/2025 11:22;07/08/2025 11:34;Saiu da cerca;0.2
+RRP;SYL4A20;Pro LOG;Não Mapeado;07/08/2025 11:22;07/08/2025 11:34;Saiu da cerca;0.2
+RRP;SYL4A20;Fábrica;Fábrica;07/08/2025 11:36;07/08/2025 12:20;Saiu da cerca;0.74
+RRP;SYL4A20;Carregamento;Carregamento;07/08/2025 11:36;07/08/2025 12:05;Saiu da cerca;0.49
+RRP;SYL4A20;Buffer frotas ;Parada Operacional;07/08/2025 12:22;07/08/2025 12:37;Saiu da cerca;0.25
+RRP;SYD5G61;Terminal Inocencia;Terminal;07/08/2025 11:29;;Entrou na cerca;0.0
+RRP;SYD5G63;Terminal Inocencia;Terminal;07/08/2025 11:30;;Entrou na cerca;0.0
+RRP;SYL4A18;Terminal Inocencia;Terminal;07/08/2025 09:31;;Entrou na cerca;0.0
+RRP;SYL5J47;Agua Clara;Parada Operacional;07/08/2025 06:38;07/08/2025 11:08;Saiu da cerca;4.49
+RRP;SYL5J47;PA AGUA CLARA;Ponto Apoio;07/08/2025 06:43;07/08/2025 11:01;Saiu da cerca;4.31
+TLS;SYR4E33;TRAJETO FABRICA X PA;Não Mapeado;07/08/2025 06:44;07/08/2025 07:26;Saiu da cerca;0.69
+TLS;SYR4E33;Trajeto Posto;Não Mapeado;07/08/2025 07:27;07/08/2025 07:28;Saiu da cerca;0.01
+TLS;SYR4E33;Fila abastecimento posto;Parada Operacional;07/08/2025 07:32;07/08/2025 07:33;Saiu da cerca;0.01
+TLS;SYR4E33;POSTO DE ABASTECIMENTO;Parada Operacional;07/08/2025 07:33;07/08/2025 07:48;Saiu da cerca;0.25
+TLS;SYR4E33;Trajeto Posto;Não Mapeado;07/08/2025 07:48;07/08/2025 07:51;Saiu da cerca;0.06
+TLS;SYR4E33;AREA EXTERNA SUZANO;Parada Operacional;07/08/2025 07:53;07/08/2025 07:56;Saiu da cerca;0.06
+TLS;SYR4E33;Carregamento Fabrica;Fábrica;07/08/2025 07:56;07/08/2025 08:46;Saiu da cerca;0.83
+TLS;SYR4E33;TRAJETO FABRICA X PA;Não Mapeado;07/08/2025 08:51;07/08/2025 09:37;Saiu da cerca;0.78
+TLS;SYR4E33;TRAJETO PA X APARECIDA 1;Não Mapeado;07/08/2025 09:37;07/08/2025 10:11;Saiu da cerca;0.56
+TLS;SYR4E33;MONTANINI;Parada Operacional;07/08/2025 09:39;07/08/2025 09:40;Saiu da cerca;0.01
+TLS;SYR4E33;TRAJETO PA X APARECIDA 2;Não Mapeado;07/08/2025 10:14;07/08/2025 11:31;Saiu da cerca;1.28
+TLS;SYR4E33;TRAJETO PA X APARECIDA 3;Não Mapeado;07/08/2025 11:31;07/08/2025 11:42;Saiu da cerca;0.18
+TLS;SYR4E37;TRAJETO FABRICA X PA;Não Mapeado;07/08/2025 07:27;07/08/2025 08:16;Saiu da cerca;0.81
+TLS;SYR4E37;TRAJETO PA X APARECIDA 1;Não Mapeado;07/08/2025 08:16;07/08/2025 08:55;Saiu da cerca;0.65
+TLS;SYR4E37;TRAJETO PA X APARECIDA 2;Não Mapeado;07/08/2025 08:55;07/08/2025 09:54;Saiu da cerca;0.98
+TLS;SYR4E37;SELVIRIA;Parada Operacional;07/08/2025 09:18;07/08/2025 09:25;Saiu da cerca;0.11
+TLS;SYR4E37;TRAJETO PA X APARECIDA 3;Não Mapeado;07/08/2025 09:54;07/08/2025 10:18;Saiu da cerca;0.41
+TLS;SYR4E37;Terminal;Terminal;07/08/2025 10:23;07/08/2025 12:07;Saiu da cerca;1.73
+TLS;TJM9E93;AREA EXTERNA SUZANO;Parada Operacional;07/08/2025 08:03;07/08/2025 08:04;Saiu da cerca;0.02
+TLS;TJM9E93;TRAJETO FABRICA X PA;Não Mapeado;07/08/2025 08:07;07/08/2025 09:05;Saiu da cerca;0.96
+TLS;TJM9E93;TRAJETO PA X APARECIDA 1;Não Mapeado;07/08/2025 09:05;07/08/2025 09:40;Saiu da cerca;0.58
+TLS;TJM9E93;MONTANINI;Parada Operacional;07/08/2025 09:07;07/08/2025 09:08;Saiu da cerca;0.01
+TLS;TJM9E93;TRAJETO PA X APARECIDA 2;Não Mapeado;07/08/2025 09:45;07/08/2025 10:49;Saiu da cerca;1.06
+TLS;TJM9E93;SELVIRIA;Parada Operacional;07/08/2025 10:09;07/08/2025 10:14;Saiu da cerca;0.09
+TLS;TJM9E93;TRAJETO PA X APARECIDA 3;Não Mapeado;07/08/2025 10:49;07/08/2025 11:12;Saiu da cerca;0.39
+RRP;SYL5J46;Terminal Inocencia;Terminal;07/08/2025 10:09;;Entrou na cerca;0.0
