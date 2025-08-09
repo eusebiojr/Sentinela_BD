@@ -1,502 +1,178 @@
-# POI Deviation Detection System - Sentinela BD
+# Sistema Sentinela BD - Monitor de Pontos Notáveis
 
-## 📋 Project Overview
+## 📋 Descrição
+Sistema para monitoramento e análise de pontos notáveis (POIs) de veículos utilizando a API da Creare Cloud. O sistema coleta eventos de entrada/saída em locais específicos nas últimas 5 horas e gera relatórios em formato CSV.
 
-A comprehensive 24/7 POI (Points of Interest) deviation detection system that monitors vehicle activity at RRP and TLS facilities, implementing automated alert escalation with N1-N4 levels. Built on Google Cloud Platform with modern serverless architecture.
+## 🎯 Objetivo
+Monitorar veículos em locais específicos (POIs) das filiais RRP e TLS, consolidando eventos consecutivos e gerando relatórios detalhados para análise operacional.
 
-### 🎯 Key Features
+## 🚀 Funcionalidades Principais
 
-- **24/7 Monitoring**: Continuous POI monitoring with hourly data collection
-- **Smart Deviation Detection**: Group-based analysis with escalation logic (N1→N2→N3→N4)
-- **Multi-Channel Alerts**: Email, SMS, and webhook delivery with specific formatting
-- **Historical Analytics**: Time-series data storage and analysis in BigQuery
-- **Real-time State Management**: Live alert states and configuration in Firestore
-- **Security by Design**: Comprehensive IAM, VPC, and audit controls
+### 1. Coleta de Dados
+- Busca eventos das **últimas 5 horas** via API Creare Cloud
+- Filtragem automática por POIs específicos (RRP e TLS)
+- Correção de timezone para Campo Grande/MS (UTC-4)
+- Autenticação OAuth2 automatizada
 
-### 🏗️ System Architecture
+### 2. Processamento de Dados
+- **Consolidação inteligente**: Remove eventos consecutivos duplicados do mesmo POI
+- **Classificação por filial**: Automática baseada nos POIs monitorados
+- **Mapeamento de grupos**: Utiliza arquivo `Grupos.csv` para classificação
+- **Cálculo de duração**: Permanência em cada local
 
-```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Creare Cloud  │───▶│  Data Collector  │───▶│    BigQuery     │
-│       API       │    │ Cloud Function   │    │ (poi_monitoring)│
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                                │
-                                ▼
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│ Alert Delivery  │◀───│ Deviation        │───▶│   Firestore     │
-│ Cloud Function  │    │ Detector         │    │ (alert_states)  │
-└─────────────────┘    │ Cloud Function   │    └─────────────────┘
-        │               └──────────────────┘
-        ▼
-┌─────────────────┐
-│ Multi-Channel   │
-│ Alert Delivery  │
-│ (Email/SMS)     │
-└─────────────────┘
-```
+### 3. Geração de Relatórios
+- Arquivo CSV com timestamp automático
+- Relatório detalhado no console com estatísticas
+- Ordenação por veículo e cronologia
 
-## 🗂️ Project Structure
+## 📁 Estrutura do Projeto
 
 ```
 Sentinela_BD/
-├── scripts/pontos_notaveis/               # Original implementation
-│   └── gerar_relatorio_pontos_notaveis.py
-├── cloud-functions/                       # Cloud Functions (NEW)
-│   ├── data-collector/
-│   ├── deviation-detector/
-│   └── alert-manager/
-├── deployment/                            # Deployment scripts (NEW)
-│   └── deploy.sh
-├── security/                             # Security framework (NEW)
-│   ├── security-framework.md
-│   └── setup-security.sh
-├── database-schema.sql                   # BigQuery schema (NEW)
-├── firestore-schema.md                   # Firestore schema (NEW)
-├── gcp-architecture.md                   # Architecture docs (NEW)
-├── backend-architecture.md               # Backend design (NEW)
-├── Grupos.csv                           # POI mappings (PRESERVED)
-└── README.md                            # This documentation
+├── scripts/
+│   └── pontos_notaveis/
+│       └── gerar_relatorio_pontos_notaveis.py    # Script principal
+├── sistema_antigo/                                # Códigos de referência
+│   ├── C09_RRP.py
+│   ├── C09_TLS.py
+│   ├── C09_unificado.py
+│   └── LÓGICA DOS DESVIOS HORA EM HORA.pdf
+├── backup_projeto_20250809/                       # Backup de arquivos anteriores
+├── Grupos.csv                                     # Mapeamento POI → Grupo
+└── .env                                          # Credenciais (não versionado)
 ```
 
-## 🚀 Quick Start
+## 🏭 POIs Monitorados
 
-### Prerequisites
+### RRP (Ribas do Rio Pardo) - 11 locais
+- Manutencao JSL RRP
+- Carregamento Fabrica RRP
+- Buffer Frotas
+- Abastecimento Frotas RRP
+- Oficina JSL
+- Posto Mutum
+- Agua Clara
+- PA AGUA CLARA
+- Descarga Inocencia
+- Manuten¿¿o Geral JSL RRP (caracteres especiais)
 
-- Google Cloud Platform account with billing enabled
-- `gcloud` CLI installed and configured
-- Project with necessary APIs enabled
-- Domain with email/SMS capabilities for alerts
+### TLS (Três Lagoas) - 17 locais
+- Carregamento Fabrica
+- AREA EXTERNA SUZANO
+- POSTO DE ABASTECIMENTO
+- Fila abastecimento posto
+- PA Celulose
+- Manutencao Celulose
+- MONTANINI, SELVIRIA, FILA DESCARGA APT
+- Descarga TAP, PB Lopes
+- Oficina Central JSL
+- PB LOPES SCANIA, MS3 LAVA JATO
+- REBUCCI, CEMAVI, FEISCAR
+- DIESELTRONIC, LM RADIADORES
+- ALBINO, JDIESEL, TRUCK LAZER
 
-### 1. Clone and Setup
+## 📊 Formato de Saída (CSV)
+
+| Campo | Descrição |
+|-------|-----------|
+| Filial | RRP ou TLS |
+| Placa_Veiculo | Placa do veículo |
+| Descricao_POI | Nome do local |
+| Grupo_POI | Grupo mapeado no Grupos.csv |
+| Data_Entrada | Data/hora entrada (formato brasileiro) |
+| Data_Saida | Data/hora saída (formato brasileiro) |
+| Status | "Saiu da cerca" ou "Entrou na cerca" |
+| Duracao | Tempo de permanência (decimal em horas) |
+
+## ⚙️ Configuração
+
+### Pré-requisitos
+- Python 3.6+
+- Bibliotecas padrão: `json`, `base64`, `urllib`, `csv`, `datetime`, `collections`, `os`
+
+### Arquivos Necessários
+1. **Grupos.csv**: Mapeamento de POIs para grupos
+   - Formato: `POI;GRUPO` (separado por ponto-e-vírgula)
+   - Encoding: UTF-8 com BOM
+
+2. **.env**: Credenciais da API (não incluído no repositório)
+
+## 🔧 Como Usar
+
+### Execução Principal
+```bash
+cd scripts/pontos_notaveis/
+python3 gerar_relatorio_pontos_notaveis.py
+```
+
+### Saída Esperada
+- **Console**: Relatório detalhado com estatísticas
+- **Arquivo**: `pontos_notaveis_FILTRO_POIS_YYYYMMDD_HHMMSS.csv`
+
+## 🎯 Principais Recursos
+
+### 1. Filtragem Inteligente
+- Apenas POIs específicos são processados
+- Suporte a caracteres especiais em nomes de POIs
+- Classificação automática por filial
+
+### 2. Consolidação de Eventos
+- Remove registros duplicados consecutivos
+- Mantém primeira entrada e última saída
+- Otimiza a análise de permanência real
+
+### 3. Timezone Correto
+- Conversão automática UTC → Campo Grande (UTC-4)
+- Datas apresentadas em formato brasileiro
+- Cálculos precisos de duração
+
+### 4. Relatório Detalhado
+- Estatísticas por filial, veículo e POI
+- Top 10 locais mais visitados
+- Resumo geral do processamento
+
+## 📈 Exemplo de Uso
 
 ```bash
-git clone <repository-url>
-cd Sentinela_BD
+$ python3 gerar_relatorio_pontos_notaveis.py
 
-# Update project configuration
-export PROJECT_ID="your-project-id"
-sed -i 's/poi-monitoring-prod/'$PROJECT_ID'/g' deployment/deploy.sh
-sed -i 's/poi-monitoring-prod/'$PROJECT_ID'/g' security/setup-security.sh
+🚛 PONTOS NOTÁVEIS - FILTRO POR POIs - ÚLTIMAS 5 HORAS
+🕐 Horário atual: 09/08/2025 09:15:30 (Campo Grande/MS)
+📊 Total de POIs monitorados: 28
+
+✅ Carregados 15 mapeamentos de grupos do arquivo Grupos.csv
+📊 Total de eventos encontrados: 1,245
+✅ Total de eventos após filtro de POIs: 156
+✅ Eventos processados após filtro POI: 156
+✅ Consolidação simplificada concluída: 134 eventos
+📊 CSV gerado: pontos_notaveis_FILTRO_POIS_20250809_091530.csv
+
+📈 RELATÓRIO DETALHADO
+🏢 EVENTOS POR FILIAL:
+   • TLS: 89 eventos
+   • RRP: 45 eventos
 ```
 
-### 2. Deploy Security Framework
-
-```bash
-# Setup security (IAM, VPC, secrets)
-./security/setup-security.sh
-
-# Add your actual API credentials
-echo "your-client-id" | gcloud secrets versions add creare-client-id --data-file=-
-echo "your-client-secret" | gcloud secrets versions add creare-client-secret --data-file=-
-```
-
-### 3. Deploy System Components
-
-```bash
-# Deploy all Cloud Functions and infrastructure
-./deployment/deploy.sh
-
-# Verify deployment
-gcloud functions list --filter="name:poi-"
-```
-
-### 4. Configure Alert Recipients
-
-```bash
-# Import Firestore configuration (update with your recipients)
-# Edit /tmp/firestore-init.json and import to Firestore console
-```
-
-### 5. Test the System
-
-```bash
-# Trigger manual execution
-gcloud scheduler jobs run data-collection-schedule --location=us-central1
-
-# Monitor logs
-gcloud functions logs read poi-data-collector --limit=50
-```
-
-## 📊 Business Logic
-
-### POI Monitoring Rules
-
-The system monitors **29 POIs** across two facilities:
-- **RRP**: 11 POIs (Carregamento Fábrica, Buffer Frotas, etc.)
-- **TLS**: 18 POIs (Carregamento Fábrica, AREA EXTERNA SUZANO, etc.)
-
-### Alert Escalation Logic
-
-```yaml
-N1 (First Alert): 2+ hours in POI
-  - Channels: Email only
-  - Re-alert: Every 4 hours
-  
-N2 (Escalation): 4+ hours in POI  
-  - Channels: Email + SMS
-  - Re-alert: Every 2 hours
-  
-N3 (Critical): 8+ hours in POI
-  - Channels: Email + SMS
-  - Re-alert: Every 1 hour
-  
-N4 (Emergency): 12+ hours in POI
-  - Channels: Email + SMS + Webhook
-  - Re-alert: Every 1 hour
-```
-
-### Alert Title Format
-
-**Format**: `{FILIAL}_{POI_SEM_ESPACOS}_{NIVEL}_{DDMMYYYY}_{HHMMSS}`  
-**Example**: `RRP_CarregamentoFabricaRRP_N2_08082025_160000`
-
-- Timestamp always at closed hour (16:10h becomes 16:00:00)
-- POI without spaces or special characters
-- Brazilian date format (DDMMYYYY)
-
-## 🔧 Configuration Management
-
-### POI Group Mappings
-
-POIs are classified into operational groups via `Grupos.csv`:
-
-```csv
-POI;GRUPO
-Carregamento Fabrica RRP;Fábrica
-Buffer Frotas;Buffer
-Abastecimento Frotas RRP;Abastecimento
-Manutencao JSL RRP;Manutenção
-```
-
-### Alert Recipients Configuration
-
-Managed in Firestore `system_settings/alert_recipients`:
-
-```json
-{
-  "by_filial": {
-    "RRP": {
-      "email": ["manager.rrp@company.com"],
-      "sms": ["+5567999999999"]
-    },
-    "TLS": {
-      "email": ["manager.tls@company.com"], 
-      "sms": ["+5567888888888"]
-    }
-  },
-  "by_level": {
-    "N1": ["operations"],
-    "N2": ["operations", "supervisors"],
-    "N3": ["operations", "supervisors", "managers"],
-    "N4": ["operations", "supervisors", "managers", "directors"]
-  }
-}
-```
-
-### Deviation Thresholds
-
-Customizable per POI in Firestore `poi_configurations`:
-
-```json
-{
-  "poi_name": "Carregamento Fabrica RRP",
-  "deviation_thresholds": {
-    "escalation_hours": {
-      "N1": 2, "N2": 4, "N3": 8, "N4": 12
-    },
-    "max_duration_hours": 3.0
-  }
-}
-```
-
-## 📈 Data Model
-
-### BigQuery Tables
-
-#### `poi_events_raw`
-Raw API data with full event details
-- Partitioned by `event_date` 
-- Clustered by `filial`, `fence_description`, `vehicle_plate`
-- 2-year retention
-
-#### `poi_events_processed` 
-Cleaned and consolidated events
-- Business logic applied (consolidation, timezone conversion)
-- Optimized for deviation detection queries
-
-#### `poi_deviations`
-Detected deviations and alert history
-- Escalation tracking and state management
-- 3-year retention for compliance
-
-#### `alert_history`
-Complete alert delivery log
-- Multi-channel delivery tracking
-- Retry and error information
-
-### Firestore Collections
-
-#### `alert_states`
-Real-time alert status tracking
-- Current escalation levels
-- Delivery status and history
-- Auto-cleanup after 7 days
-
-#### `system_settings`
-Configuration and recipients
-- Global system parameters
-- Alert channel settings
-- POI group mappings cache
-
-## 🔒 Security Features
-
-### Multi-Layered Security
-
-- **IAM**: Custom roles with least privilege access
-- **Service Accounts**: Dedicated accounts per function
-- **VPC**: Private networking with controlled egress
-- **Secrets**: Encrypted credential storage with rotation
-- **Audit**: Comprehensive logging and compliance
-
-### Access Controls
-
-```yaml
-poi-data-collector:
-  - bigquery.dataEditor (poi_monitoring only)
-  - secretmanager.secretAccessor (API creds only)
-  - storage.objectViewer (config bucket only)
-
-poi-deviation-detector:
-  - bigquery.dataViewer (poi_monitoring)
-  - firestore.user (alert_states)
-  - pubsub.publisher (deviation alerts only)
-
-poi-alert-manager:
-  - firestore.user (alert_states, system_settings)
-  - secretmanager.secretAccessor (SMTP creds only)
-  - bigquery.dataEditor (alert_history only)
-```
-
-### Network Security
-
-- Private VPC with Cloud NAT for outbound access
-- Firewall rules allowing only necessary traffic
-- Cloud Armor WAF with rate limiting
-- VPC Service Controls (optional)
-
-## 📊 Monitoring & Operations
-
-### System Metrics
-
-- **Data Collection**: API response times, error rates, event volumes
-- **Processing**: Deviation detection accuracy, processing latency
-- **Alerts**: Delivery success rates, channel performance
-- **Infrastructure**: Function execution times, costs, resource usage
-
-### Operational Dashboards
-
-1. **Real-time Status**: Active alerts, system health
-2. **Historical Analytics**: Trend analysis, POI performance
-3. **Security Monitoring**: Access logs, failed attempts
-4. **Cost Monitoring**: Resource usage, budget alerts
-
-### Troubleshooting
-
-#### Common Issues
-
-**No events being collected**:
-```bash
-# Check data collector logs
-gcloud functions logs read poi-data-collector --limit=20
-
-# Verify API credentials
-gcloud secrets versions access latest --secret=creare-client-id
-```
-
-**Alerts not being sent**:
-```bash
-# Check alert manager logs
-gcloud functions logs read poi-alert-manager --limit=20
-
-# Verify SMTP configuration  
-gcloud secrets versions access latest --secret=smtp-config
-```
-
-**Deviation detection not working**:
-```bash
-# Check deviation detector logs
-gcloud functions logs read poi-deviation-detector --limit=20
-
-# Query active sessions
-bq query "SELECT COUNT(*) FROM poi_monitoring.poi_events_processed WHERE exit_timestamp IS NULL"
-```
-
-### Performance Optimization
-
-#### BigQuery Optimization
-- Use partitioning for time-based queries
-- Cluster tables by common filter columns
-- Optimize SQL queries with proper predicates
-- Use materialized views for complex aggregations
-
-#### Function Optimization
-- Right-size memory allocation (512MB-1GB)
-- Implement proper error handling and retries
-- Use connection pooling for external services
-- Cache configuration data in memory
-
-#### Cost Optimization
-- Monitor BigQuery slot usage and queries
-- Use appropriate storage classes for Cloud Storage
-- Implement lifecycle policies for old data
-- Set up budget alerts and spending controls
-
-## 🔄 Maintenance & Updates
-
-### Regular Maintenance Tasks
-
-**Weekly**:
-- Review system performance metrics
-- Check error rates and failed alerts
-- Verify data quality and completeness
-
-**Monthly**:
-- Update POI configurations as needed
-- Review and rotate API credentials
-- Analyze cost reports and optimize
-
-**Quarterly**:
-- Update alert recipient lists
-- Review security policies and access
-- Performance tuning and capacity planning
-
-### Update Procedures
-
-#### Code Updates
-```bash
-# Update function code
-gcloud functions deploy poi-data-collector \
-    --source=cloud-functions/data-collector \
-    --trigger-topic=hourly-data-collection
-
-# Test in staging first
-gcloud functions call poi-data-collector --data='{}'
-```
-
-#### Configuration Updates
-```bash
-# Update POI groups
-gsutil cp Grupos.csv gs://poi-config-bucket/poi_groups.csv
-
-# Update Firestore configurations via console or API
-```
-
-#### Schema Updates
-```sql
--- Add new columns to existing tables
-ALTER TABLE `poi_monitoring.poi_events_processed`
-ADD COLUMN new_field STRING;
-
--- Create new tables as needed
-CREATE TABLE `poi_monitoring.new_feature_table` (...);
-```
-
-## 📞 Support & Troubleshooting
-
-### Support Contacts
-
-- **System Administration**: admin@company.com
-- **Business Operations**: operations@company.com  
-- **Technical Support**: tech-support@company.com
-
-### Documentation Links
-
-- [GCP Architecture Details](/gcp-architecture.md)
-- [Database Schema Reference](/database-schema.sql)
-- [Security Framework](/security/security-framework.md) 
-- [Backend Architecture](/backend-architecture.md)
-
-### Emergency Procedures
-
-**System Outage**:
-1. Check Cloud Function status and logs
-2. Verify BigQuery and Firestore connectivity
-3. Review recent deployments and rollback if needed
-4. Escalate to GCP support if infrastructure issue
-
-**Data Loss or Corruption**:
-1. Stop data processing functions immediately
-2. Identify scope and timeline of issue
-3. Restore from BigQuery backups if available
-4. Implement data recovery procedures
-
-**Security Incident**:
-1. Document the incident timeline
-2. Review audit logs and access patterns  
-3. Rotate compromised credentials immediately
-4. Report to security team and stakeholders
-
-## 🎯 Roadmap & Future Enhancements
-
-### Near-term (3 months)
-- [ ] Mobile app for alert management
-- [ ] Advanced analytics dashboard
-- [ ] Machine learning for predictive alerts
-- [ ] WhatsApp integration for alerts
-
-### Medium-term (6 months)  
-- [ ] Multi-region deployment for DR
-- [ ] Integration with fleet management systems
-- [ ] Automated incident response workflows
-- [ ] Advanced reporting and BI tools
-
-### Long-term (12 months)
-- [ ] IoT sensor integration
-- [ ] Computer vision for vehicle recognition  
-- [ ] Blockchain for audit trail immutability
-- [ ] AI-powered root cause analysis
-
-## 📚 Legacy System (Preserved)
-
-### Original Script: `scripts/pontos_notaveis/gerar_relatorio_pontos_notaveis.py`
-
-The original implementation is preserved for reference and migration purposes:
-
-**Functionality:**
-- Fetches events from last 5 hours via CREARE API
-- Filters by specific POIs (RRP and TLS)
-- Consolidates consecutive events from same vehicle/POI
-- Classifies POIs using `Grupos.csv` mapping
-- Generates detailed CSV reports
-
-**Usage:**
-```bash
-cd /mnt/c/Users/eusebioagj/OneDrive/Sentinela_BD
-python3 scripts/pontos_notaveis/gerar_relatorio_pontos_notaveis.py
-```
-
-**Output Format:**
-- File: `pontos_notaveis_FILTRO_POIS_[timestamp].csv`
-- Fields: Filial, Placa_Veiculo, Descricao_POI, Grupo_POI, Data_Entrada, Data_Saida, Status, Duracao
+## 🔍 Troubleshooting
+
+### Problemas Comuns
+1. **Erro de token**: Verificar credenciais no .env
+2. **POI não encontrado**: Verificar se está na lista POIS_FILTRADOS
+3. **Charset do CSV**: Arquivo usa UTF-8 com BOM para Excel
+
+### Logs Importantes
+- `✅ Carregados X mapeamentos`: Grupos.csv carregado com sucesso
+- `📊 Total de eventos encontrados`: Eventos brutos da API
+- `✅ Total após filtro`: Eventos dos POIs específicos
+- `✅ Consolidação concluída`: Eventos após limpeza
+
+## 🚀 Próximos Passos
+1. Implementação de alertas automáticos
+2. Dashboard web para visualização
+3. Integração com banco de dados
+4. Análise de desvios e anomalias
 
 ---
 
-## 📄 License
-
-This project is proprietary software owned by [Your Company]. All rights reserved.
-
-## 👥 Contributors
-
-- **Project Coordinator**: Jarvis (AI Assistant)
-- **Original System**: Based on existing Sentinela BD implementation
-- **Cloud Architecture**: GCP Infrastructure Specialist
-- **Database Design**: BigQuery Data Specialist  
-- **Backend Development**: API Integration & Backend System Specialists
-- **Security Framework**: GCP Security Specialist
-- **Documentation**: Pipeline Documentation Specialist
-
----
-
-**Last Updated**: August 8, 2025  
-**Version**: 1.0.0  
-**Status**: Production Ready
+**Versão**: 2.0 - Reconstrução completa
+**Última atualização**: 09/08/2025
