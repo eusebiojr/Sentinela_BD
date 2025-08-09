@@ -1,0 +1,8 @@
+# Dependências para Sistema Sentinela BD
+google-cloud-bigquery>=3.11.0
+google-cloud-logging>=3.5.0
+google-cloud-scheduler>=2.13.0
+flask>=2.3.0
+requests>=2.31.0
+python-dateutil>=2.8.0
+pytz>=2023.3

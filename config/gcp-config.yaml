@@ -1,0 +1,163 @@
+# Configuração GCP para Sistema de Detecção de Desvios - Sentinela BD
+# Arquivo de configuração centralizada
+
+project:
+  id: "sz-wsp-00009"
+  name: "Sentinela BD Detection System"
+  region: "us-central1"
+  zone: "us-central1-a"
+
+# Cloud Run Configuration
+cloud_run:
+  service_name: "sentinela-detection"
+  region: "us-central1"
+  platform: "managed"
+  memory: "1Gi"
+  cpu: "1"
+  min_instances: 0
+  max_instances: 10
+  concurrency: 1
+  timeout: 300
+  port: 8080
+  
+  # Environment Variables
+  env_vars:
+    ENVIRONMENT: "production"
+    GCP_PROJECT_ID: "sz-wsp-00009"
+    BIGQUERY_DATASET: "sentinela_bd"
+    LOG_LEVEL: "INFO"
+
+# Cloud Scheduler Configuration  
+scheduler:
+  job_name: "sentinela-hourly-detection"
+  description: "Execução horária do sistema de detecção de desvios"
+  schedule: "0 * * * *"  # Every hour at minute 0
+  timezone: "America/Sao_Paulo"
+  target_type: "http"
+  http_method: "POST"
+  uri: "/execute"
+  retry_count: 3
+  retry_interval: "60s"
+  timeout: "300s"
+
+# BigQuery Configuration
+bigquery:
+  dataset_id: "sentinela_bd"
+  location: "US"
+  description: "Dataset para sistema de detecção de desvios Sentinela BD"
+  default_table_expiration_ms: 31536000000  # 1 ano
+  
+  tables:
+    - name: "veiculos_ativos"
+      description: "Registro horário de veículos ativos nos POIs"
+    - name: "eventos_desvio"  
+      description: "Eventos de desvio de SLA com níveis N1-N4"
+    - name: "escalacoes_niveis"
+      description: "Controle de escalonamento com persistência"
+    - name: "metricas_sla"
+      description: "Métricas consolidadas por hora"
+    - name: "system_logs"
+      description: "Logs estruturados do sistema"
+
+# IAM Configuration
+iam:
+  service_account:
+    name: "sentinela-detection-sa"
+    display_name: "Sentinela Detection Service Account"
+    description: "Service Account para sistema de detecção de desvios"
+    
+  roles:
+    - "roles/bigquery.dataEditor"
+    - "roles/bigquery.jobUser"
+    - "roles/monitoring.metricWriter"
+    - "roles/logging.logWriter"
+    - "roles/cloudscheduler.serviceAgent"
+    
+# Monitoring Configuration
+monitoring:
+  # Custom Metrics
+  custom_metrics:
+    - name: "desvios_detectados"
+      type: "gauge"
+      description: "Número de desvios detectados por filial/grupo"
+      labels: ["filial", "grupo", "nivel"]
+      
+    - name: "tempo_processamento"
+      type: "histogram"
+      description: "Tempo de processamento da detecção"
+      
+    - name: "veiculos_ativos_total"
+      type: "gauge" 
+      description: "Total de veículos ativos por POI"
+      labels: ["filial", "grupo", "poi"]
+      
+    - name: "api_response_time"
+      type: "histogram"
+      description: "Tempo de resposta da API externa"
+      
+    - name: "sla_compliance_rate"
+      type: "gauge"
+      description: "Taxa de conformidade com SLA por grupo"
+      labels: ["filial", "grupo"]
+
+  # Alerting Policies
+  alerts:
+    - name: "Sistema Sentinela Down"
+      condition: "Cloud Run service não responsivo por > 5min"
+      severity: "CRITICAL"
+      notification_channels: ["email", "slack"]
+      
+    - name: "Desvios N4 Detectados"
+      condition: "Desvios nível N4 por > 15min"
+      severity: "WARNING"  
+      notification_channels: ["email"]
+      
+    - name: "Falha na API Externa"
+      condition: "Taxa de erro > 5% em 10min"
+      severity: "WARNING"
+      notification_channels: ["email"]
+
+# Logging Configuration
+logging:
+  log_level: "INFO"
+  structured: true
+  retention_days: 30
+  
+  sinks:
+    - name: "bigquery-sink"
+      destination: "bigquery.googleapis.com/projects/sz-wsp-00009/datasets/sentinela_bd/tables/system_logs"
+      filter: 'resource.type="cloud_run_revision" AND resource.labels.service_name="sentinela-detection"'
+
+# Security Configuration
+security:
+  # VPC Configuration (opcional, para maior segurança)
+  vpc:
+    enable: false
+    network_name: "sentinela-vpc"
+    subnet_name: "sentinela-subnet"
+    
+  # SSL/TLS
+  ssl:
+    enforce_https: true
+    min_tls_version: "1.2"
+    
+  # Secrets (usar Secret Manager para credenciais sensíveis)
+  secrets:
+    api_client_secret: "projects/sz-wsp-00009/secrets/frotalog-client-secret/versions/latest"
+
+# Backup and Disaster Recovery
+backup:
+  bigquery:
+    automatic_backup: true
+    retention_days: 365
+    cross_region_backup: true
+    
+  code_repository:
+    backup_frequency: "daily"
+    retention_weeks: 12
+
+# Development/Testing Configuration  
+development:
+  enable_debug: false
+  test_endpoints: false
+  mock_external_api: false

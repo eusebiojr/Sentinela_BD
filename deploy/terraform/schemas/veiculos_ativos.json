@@ -1,0 +1,92 @@
+[
+  {
+    "name": "timestamp_verificacao",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED",
+    "description": "Timestamp da verificação horária"
+  },
+  {
+    "name": "execution_id", 
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "ID único da execução"
+  },
+  {
+    "name": "placa_veiculo",
+    "type": "STRING", 
+    "mode": "REQUIRED",
+    "description": "Placa do veículo"
+  },
+  {
+    "name": "evento_id",
+    "type": "STRING",
+    "mode": "NULLABLE", 
+    "description": "ID do evento na API externa"
+  },
+  {
+    "name": "poi",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Nome do POI"
+  },
+  {
+    "name": "filial", 
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Filial (RRP ou TLS)"
+  },
+  {
+    "name": "grupo",
+    "type": "STRING",
+    "mode": "REQUIRED", 
+    "description": "Grupo do POI (Fábrica, Terminal, etc)"
+  },
+  {
+    "name": "data_entrada",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED",
+    "description": "Timestamp de entrada no POI"
+  },
+  {
+    "name": "tempo_permanencia_horas",
+    "type": "FLOAT64",
+    "mode": "REQUIRED",
+    "description": "Tempo de permanência em horas"
+  },
+  {
+    "name": "limite_sla",
+    "type": "INTEGER", 
+    "mode": "NULLABLE",
+    "description": "Limite SLA do grupo"
+  },
+  {
+    "name": "qtd_grupo",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Quantidade de veículos no grupo"
+  },
+  {
+    "name": "status_sla",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Status do SLA (OK ou DESVIO)"
+  },
+  {
+    "name": "em_desvio",
+    "type": "BOOLEAN",
+    "mode": "REQUIRED", 
+    "description": "Indica se o grupo está em desvio"
+  },
+  {
+    "name": "created_at",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE",
+    "description": "Timestamp de criação do registro"
+  },
+  {
+    "name": "updated_at",
+    "type": "TIMESTAMP", 
+    "mode": "NULLABLE",
+    "description": "Timestamp da última atualização"
+  }
+]

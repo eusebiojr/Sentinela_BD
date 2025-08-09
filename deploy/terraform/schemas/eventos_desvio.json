@@ -1,0 +1,116 @@
+[
+  {
+    "name": "evento_id",
+    "type": "STRING", 
+    "mode": "REQUIRED",
+    "description": "ID único do evento de desvio"
+  },
+  {
+    "name": "execution_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "ID da execução que detectou o desvio"
+  },
+  {
+    "name": "timestamp_verificacao",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED",
+    "description": "Timestamp da verificação"
+  },
+  {
+    "name": "filial",
+    "type": "STRING",
+    "mode": "REQUIRED", 
+    "description": "Filial (RRP ou TLS)"
+  },
+  {
+    "name": "grupo",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Grupo em desvio"
+  },
+  {
+    "name": "placa_veiculo", 
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Placa do veículo em desvio"
+  },
+  {
+    "name": "poi",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "POI onde está o veículo"
+  },
+  {
+    "name": "qtd_veiculos_grupo",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Quantidade total de veículos no grupo"
+  },
+  {
+    "name": "limite_sla",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Limite SLA do grupo"
+  },
+  {
+    "name": "excesso",
+    "type": "INTEGER", 
+    "mode": "REQUIRED",
+    "description": "Quantidade em excesso ao limite"
+  },
+  {
+    "name": "data_entrada",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED",
+    "description": "Entrada do veículo no POI"
+  },
+  {
+    "name": "tempo_permanencia_horas",
+    "type": "FLOAT64",
+    "mode": "REQUIRED",
+    "description": "Tempo de permanência do veículo"
+  },
+  {
+    "name": "nivel_alerta",
+    "type": "STRING",
+    "mode": "REQUIRED", 
+    "description": "Nível de alerta (N1, N2, N3, N4)"
+  },
+  {
+    "name": "status_evento",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Status do evento (ATIVO, RESOLVIDO, ESCALADO)"
+  },
+  {
+    "name": "acao_realizada",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Ação tomada para resolver o desvio"
+  },
+  {
+    "name": "responsavel",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Responsável pela ação"
+  },
+  {
+    "name": "observacoes",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Observações adicionais"
+  },
+  {
+    "name": "created_at",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE", 
+    "description": "Timestamp de criação"
+  },
+  {
+    "name": "updated_at",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE",
+    "description": "Timestamp da última atualização"
+  }
+]

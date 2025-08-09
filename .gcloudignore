@@ -1,0 +1,48 @@
+# gcloudignore para otimizar deploy no GCP
+
+# Git
+.git
+.gitignore
+
+# Documentation  
+*.md
+*.pdf
+*.docx
+docs/
+
+# Development
+.env*
+*.log
+*.tmp
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+venv/
+env/
+
+# Node.js (se houver)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output files
+*.csv
+*.xlsx
+
+# Project specific
+sistema_antigo/
+Grupos.csv
+instruções.docx
+.claude/
+
+# Cloud Build
+cloudbuild.yaml

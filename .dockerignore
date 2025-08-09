@@ -1,0 +1,49 @@
+# .dockerignore - Sistema Sentinela BD
+
+# Arquivos de desenvolvimento
+*.md
+*.ps1
+*.docx
+.git/
+.gitignore
+
+# Arquivos Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+.coverage
+.tox/
+venv/
+env/
+.env
+
+# Arquivos temporários
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# Relatórios gerados localmente
+*.csv
+scripts/pontos_notaveis/*.csv
+scripts/pontos_notaveis/logs/
+
+# Backups e arquivos antigos
+backup*/
+sistema_antigo/
+*_backup
+*.bak
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema
+.cache/
+.local/

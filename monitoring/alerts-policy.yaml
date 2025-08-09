@@ -1,0 +1,189 @@
+# Políticas de Alerta para Sistema Sentinela BD
+# Para ser aplicado via gcloud monitoring policies create
+
+# Alerta 1: Sistema Sentinela Down
+- displayName: "Sentinela BD - Sistema Indisponível"
+  documentation:
+    content: |
+      O sistema Sentinela BD não está respondendo ou falhou na execução.
+      
+      Ações imediatas:
+      1. Verificar logs do Cloud Run
+      2. Verificar status da API externa  
+      3. Verificar conectividade BigQuery
+      4. Reiniciar serviço se necessário
+      
+      Dashboard: https://console.cloud.google.com/monitoring/dashboards/custom/sentinela-bd
+    mimeType: "text/markdown"
+  conditions:
+  - displayName: "Cloud Run não responsivo"
+    conditionThreshold:
+      filter: 'resource.type="cloud_run_revision" AND resource.labels.service_name="sentinela-detection"'
+      aggregations:
+      - alignmentPeriod: "300s"
+        perSeriesAligner: "ALIGN_RATE"
+        crossSeriesReducer: "REDUCE_COUNT"
+      comparison: "COMPARISON_LESS_THAN"
+      thresholdValue: 1
+      duration: "300s"
+      trigger:
+        count: 1
+  alertStrategy:
+    autoClose: "1800s"  # 30 minutos
+  enabled: true
+  notificationChannels: [] # Será preenchido com IDs dos canais criados
+  severity: "CRITICAL"
+
+# Alerta 2: Desvios N4 Detectados  
+- displayName: "Sentinela BD - Desvios Nível N4 Crítico"
+  documentation:
+    content: |
+      Desvios críticos de SLA foram detectados (Nível N4 - >4 horas).
+      
+      Ação requerida:
+      - Escalonamento executivo imediato
+      - Investigação da causa raiz
+      - Comunicação com stakeholders
+      
+      Query BigQuery:
+      ```sql
+      SELECT * FROM `sz-wsp-00009.sentinela_bd.eventos_desvio` 
+      WHERE nivel_alerta = 'N4' 
+      AND status_evento = 'ATIVO'
+      ORDER BY timestamp_verificacao DESC
+      ```
+    mimeType: "text/markdown"
+  conditions:
+  - displayName: "Desvios N4 ativos"
+    conditionThreshold:
+      filter: 'metric.type="custom.googleapis.com/sentinela/desvios_detectados" AND metric.labels.nivel="N4"'
+      aggregations:
+      - alignmentPeriod: "900s"  # 15 minutos
+        perSeriesAligner: "ALIGN_SUM"
+        crossSeriesReducer: "REDUCE_SUM"
+      comparison: "COMPARISON_GREATER_THAN"
+      thresholdValue: 0
+      duration: "900s"
+  enabled: true
+  severity: "WARNING"
+
+# Alerta 3: Alta Taxa de Erros na API
+- displayName: "Sentinela BD - Falhas na API Externa"
+  documentation:
+    content: |
+      Alta taxa de erro na comunicação com a API externa (Frotalog).
+      
+      Possíveis causas:
+      - Problemas de conectividade
+      - Credenciais inválidas/expiradas
+      - API externa indisponível
+      - Throttling/Rate limiting
+      
+      Verificações:
+      1. Testar endpoint manualmente
+      2. Verificar credenciais no Secret Manager
+      3. Analisar logs de rede
+    mimeType: "text/markdown"
+  conditions:
+  - displayName: "Taxa de erro > 10% em 15min"
+    conditionThreshold:
+      filter: 'resource.type="cloud_run_revision" AND resource.labels.service_name="sentinela-detection"'
+      aggregations:
+      - alignmentPeriod: "300s"
+        perSeriesAligner: "ALIGN_RATE"
+        crossSeriesReducer: "REDUCE_COUNT"
+        groupByFields: ["resource.labels.service_name"]
+      comparison: "COMPARISON_GREATER_THAN" 
+      thresholdValue: 0.1  # 10%
+      duration: "900s"  # 15 minutos
+  enabled: true
+  severity: "WARNING"
+
+# Alerta 4: Processamento Lento
+- displayName: "Sentinela BD - Performance Degradada"
+  documentation:
+    content: |
+      O tempo de processamento do sistema está acima do normal (>60s).
+      
+      Impactos:
+      - Possível timeout do Cloud Scheduler
+      - Atraso na detecção de desvios
+      - Possível acúmulo de trabalho
+      
+      Investigação:
+      - Verificar logs de performance
+      - Analisar latência da API externa
+      - Verificar uso de recursos (CPU/Memory)
+    mimeType: "text/markdown"
+  conditions:
+  - displayName: "Tempo processamento > 60s"
+    conditionThreshold:
+      filter: 'metric.type="custom.googleapis.com/sentinela/tempo_processamento"'
+      aggregations:
+      - alignmentPeriod: "300s"
+        perSeriesAligner: "ALIGN_MEAN"
+        crossSeriesReducer: "REDUCE_MEAN"
+      comparison: "COMPARISON_GREATER_THAN"
+      thresholdValue: 60
+      duration: "600s"  # 10 minutos
+  enabled: true
+  severity: "WARNING"
+
+# Alerta 5: Falha na Persistência BigQuery
+- displayName: "Sentinela BD - Erro BigQuery"
+  documentation:
+    content: |
+      Falha na persistência de dados no BigQuery.
+      
+      Consequências:
+      - Perda de dados históricos
+      - Dashboards desatualizados
+      - Métricas incorretas
+      
+      Verificações:
+      1. Permissions da Service Account
+      2. Schema das tabelas
+      3. Quotas do BigQuery
+      4. Conectividade de rede
+    mimeType: "text/markdown"
+  conditions:
+  - displayName: "Erros BigQuery frequentes"
+    conditionThreshold:
+      filter: 'resource.type="cloud_run_revision" AND resource.labels.service_name="sentinela-detection" AND textPayload:"bigquery" AND severity="ERROR"'
+      aggregations:
+      - alignmentPeriod: "300s"
+        perSeriesAligner: "ALIGN_RATE"
+        crossSeriesReducer: "REDUCE_COUNT"
+      comparison: "COMPARISON_GREATER_THAN"
+      thresholdValue: 3  # Mais de 3 erros em 5min
+      duration: "300s"
+  enabled: true
+  severity: "WARNING"
+
+# Alerta 6: Ausência de Dados
+- displayName: "Sentinela BD - Sem Dados por Período Prolongado"
+  documentation:
+    content: |
+      O sistema não está coletando dados há mais de 2 horas.
+      
+      Possíveis causas:
+      - Cloud Scheduler desabilitado/quebrado
+      - Cloud Run service down
+      - API externa sem retornar dados
+      - Problemas de autenticação
+      
+      Ação: Investigação imediata necessária
+    mimeType: "text/markdown"
+  conditions:
+  - displayName: "Sem inserções BigQuery por 2h"
+    conditionThreshold:
+      filter: 'metric.type="custom.googleapis.com/sentinela/veiculos_ativos_total"'
+      aggregations:
+      - alignmentPeriod: "3600s"  # 1 hora
+        perSeriesAligner: "ALIGN_SUM"
+        crossSeriesReducer: "REDUCE_SUM"
+      comparison: "COMPARISON_EQUAL"
+      thresholdValue: 0
+      duration: "7200s"  # 2 horas
+  enabled: true
+  severity: "CRITICAL"
